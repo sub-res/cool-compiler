@@ -1,0 +1,3 @@
+Total errors: 1
+input.cool:2:7:Error: syntax error, unexpected {, expecting identifier or type
+BUILD FAILED (total time: 0s)

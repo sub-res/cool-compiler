@@ -1,0 +1,104 @@
+MIPS syscall reference (handled by Cool-runtime.s):
+service:	syscall code:	arguments:			result:
+print_int	1		$a0 = integer			n/a
+print_float	2		$f12 = float			n/a
+print_double	3		$f12 = double			n/a
+print_string	4		$a0 = string			n/a
+read_int	5		n/a				integer (in $v0)
+read_float	6		n/a				float (in $f0)
+read_double	7		n/a				double (in $f0)
+read_string	8		$a0 = buffer, $a1 = length	n/a
+sbrk		9		$a0 = amount			address (in $v0)
+exit		10		n/a
+
+object memory layout in Cool according to Cool-runtime.s:
+obj_eyecatch=-4	# Unique id to verify any object
+obj_tag=0
+obj_size=4
+obj_disp=8
+obj_attr=12
+int_slot=12
+bool_slot=12
+str_size=12	# This is a pointer to an Int object!!!
+str_field=16	# The beginning of the ascii sequence
+str_maxsize=1026	# the maximum string length
+ary_size=12  	# This is a pointer to an Int object
+ary_field=16    # The beginning of the array
+sym_next=12	# next symbol
+sym_name=16	# name (Cool string) of symbol
+sym_hash=20	# hashcode (Cool int) of symbol
+ary_header_words=4	# number of words in header
+
+
+/**RUNTIME MAIN*//
+
+	.text
+	.globl __start
+__start:
+	li	$v0 9
+	move	$a0 $zero
+	syscall				# sbrk
+	move	$a0 $sp			# initialize the garbage collector
+	li	$a1 MemMgr_REG_MASK
+	move	$a2 $v0
+	jal	_MemMgr_Init		# sets $gp and $s7 (limit)
+	la	$a0 Main_protObj	# create the Main object
+	jal	Any.clone		# Call copy
+	addiu	$sp $sp -4
+	sw	$a0 4($sp)		# save the Main object on the stack
+	move	$s0 $a0			# set $s0 to point to self
+	jal	Main.Main		# initialize the Main object
+	addiu	$sp $sp 4		# restore the stack
+	la	$a0 _term_msg		# show terminal message
+	li	$v0 4
+	syscall
+	li $v0 10
+	syscall				# syscall 10 (exit)
+
+	.globl mainX
+mainX:	jr	$ra
+
+//$s0 is this
+
+//simple assembly routine to get class name and print it (i.e. IO.out(this.toString());)
+	move	$a0	$s0		#store 'this' in a0
+	addiu	$sp	$sp	-4	#increase stack size
+	sw	$ra	4($sp)		#push value in ra on stack
+	jal	Any.toString		#call tostring
+	addiu	$sp	$sp	-4	#increase stack size
+	sw	$a0	4($sp)		#push value in a0 on stack
+	jal	IO.out			#call out
+	#NOTE: no need to pop argument passed to IO.out from stack
+	#IO.out does this for you!
+	addiu	$sp	$sp	4	#decrease stack size
+	jr	$ra			#return
+
+
+
+/***********EXAMPLE OBJECT CREATION**********************/
+Main.Main:
+	addiu	$sp $sp -4
+	sw	$ra 4($sp)
+	la	$a0 Vehicle_protObj	# create the Main object
+	jal	Any.clone		# Call copy
+	addiu	$sp $sp -4
+	sw	$a0 4($sp)		# save the Vehicle object on the stack
+	move	$s0 $a0			# set $s0 to point to Vehicle object
+	jal	Vehicle.Vehicle		# initialize the Vehicle object
+	lw	$ra 8($sp)
+	addiu	$sp $sp 8		# restore the stack	
+	jr	$ra
+Vehicle.Vehicle:
+	move	$a0	$s0		#store 'this' in a0
+	addiu	$sp	$sp	-4	#increase stack size
+	sw	$ra	4($sp)		#push value in ra on stack
+	jal	Any.toString		#call tostring
+	addiu	$sp	$sp	-4	#increase stack size
+	sw	$a0	4($sp)		#push value in a0 on stack
+	jal	IO.out			#call out
+
+	#NOTE: no need to pop argument passed to IO.out from stack
+	#IO.out does this for you!
+	lw	$ra	4($sp)
+	addiu	$sp	$sp	4	#decrease stack size
+	jr	$ra			#return

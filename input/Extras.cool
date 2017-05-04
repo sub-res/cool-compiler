@@ -1,0 +1,683 @@
+
+/*Linked List*/
+class LinkedList() extends IO(){
+	
+	var head : LinkedListNode = null;
+
+	def add(item : Any) : Unit = {
+		
+		var last : LinkedListNode = new LinkedListNode(item);
+		
+		head match {
+			case null => head = last
+			case l:LinkedListNode => l.add(last) 
+		}
+	};
+
+	def contains(item : Any) : Boolean = !(indexOf(item) == -1);
+
+	def isEmpty () : Boolean = head match { case null => true case l:LinkedListNode => false};
+
+	def removeFirst() : Any = {
+		head match { 	case null => abort("IndexOutOfRange Exception at removeFirst")	
+				case l:LinkedListNode => var item : Any = head.get(); head = head.next(); item }
+	};
+
+	/*Replaces first occurrence of old item with the new*/
+	def replace(oldItem : Any, newItem : Any) : Unit = {
+		var node : LinkedListNode = head;
+		while(node match { case null => false case l:LinkedListNode => true}){
+			
+			node.get() match { case null => oldItem match { case null => node.set(newItem); node = null 
+								        case a:Any=> node = node.next()}
+					   case a:Any => if(a == oldItem) {node.set(newItem); node = null} else node = node.next()
+					}
+		}
+	};
+
+	/*Replaces all occurrences of old item with the new*/
+	def replaceAll(oldItem : Any, newItem : Any) : Unit = {
+		var node : LinkedListNode = head;
+		while(node match { case null => false case l:LinkedListNode => true}){
+			
+			node.get() match { case null => oldItem match { case null => node.set(newItem)
+								        case a:Any=> {}}
+					   case a:Any => if(a == oldItem) node.set(newItem) else {}
+					};
+				node = node.next()
+		}
+	};
+
+//spot equal nulls, give warnings
+
+	/*Removes all matched items from the list*/
+	def removeAll(item : Any) : Unit = {
+		var node : LinkedListNode = head;
+		var prev : LinkedListNode = null;
+		
+		node.get() match { case null => item match {	case null =>  head = node.next()
+								case a:Any=> {}}
+				   case a:Any => if(a == item) head = node.next() else {}};
+		prev = node;
+		node = node.next();
+		
+		while(node match { case null => false case l:LinkedListNode => true}){
+			
+			node.get() match { case null => item match { case null => prev.setNext(node.next()) 
+								     case a:Any=> {}}
+					   case a:Any => if(a == item) prev.setNext(node.next()) else {}
+					};
+				prev = node;
+				node = node.next()
+		}
+
+	};
+
+
+	/*Removes first matched item from the list*/
+	def remove(item : Any) : Unit = {
+		var node : LinkedListNode = head;
+		var prev : LinkedListNode = null;
+		
+		node.get() match { case null => item match {	case null => head = node.next(); node = null
+								case a:Any=> prev = node; node = node.next() }
+				   case a:Any => if(a == item) {head = node.next(); node = null} else {prev = node; node = node.next()}};
+		
+		
+		while(node match {case null => false case l:LinkedListNode => true} ){
+			
+			node.get() match { case null => item match { case null => prev.setNext(node.next()); node = null 
+								     case a:Any=> prev = node; node = node.next() }
+					   case a:Any => if(a == item) {prev.setNext(node.next()); node = null} else {prev = node; node = node.next()}
+					}
+		}
+	};
+
+	/*Removes item at index. Throws IndexOutOfRange exception if index is smaller than 0 or greater than length-1
+	  Returns removed item*/
+
+	def removeAt(index : Int) : Any = {
+				if(index < 0){ 
+					abort("IndexOutOfRange: ".concat( index.toString())) }else{
+					var item : Any = null;
+					var node : LinkedListNode = head;
+					var prev : LinkedListNode = null;
+					var i : Int = 0;
+					while(i <= index){
+						node match {
+							case null => abort("IndexOutOfRange: ".concat(index.toString()))
+							case l:LinkedListNode => 
+									if(i == index){
+										item = l.get();
+										if(index == 0) head = node.next() else prev.setNext(node.next())
+									}else {prev = node; node = node.next()};
+									i = i + 1 
+						   	}
+					};
+					item
+				}
+	};
+
+	/*Inserts item at index 
+	Note: If index is smaller than 0, pushes to the front. If index is larger than length-1, adds to the back*/
+	def insert( index : Int, item : Any) : Unit = {
+		var newNode : LinkedListNode = new LinkedListNode(item);
+		if(index <= 0) { newNode.setNext(head); head = newNode }else{
+
+			var node : LinkedListNode = head;
+			var prev : LinkedListNode = null;
+			var i : Int = 0;
+			while(i <= index){
+					node match {
+						case null => prev.setNext(newNode); i = index + 1 //abort
+						case l:LinkedListNode => 
+								if(i == index){
+									newNode.setNext(node);
+									prev.setNext(newNode);
+									i = index + 1
+								}else{
+									prev = node; node = node.next();
+									i = i + 1
+								}
+						   	}
+					}
+		}
+	};
+
+	def length() : Int = {
+		var node : LinkedListNode = head;
+		var result : Int = 0;
+		while(node match { case null => false case l:LinkedListNode => true}){
+			result = result + 1; 
+			node = node.next()
+		};
+		result	
+	};
+
+	def indexOf(item : Any) : Int = {
+		var index : Int = -1;
+		var node : LinkedListNode = head;
+		var i : Int = 0;
+		while(node match { case null => false case l:LinkedListNode => true}){
+			node.get() match {
+				case null => item match {
+					case null => index = i; node = null 
+					case o:Any => node = node.next()}
+
+				case o:Any => if(o == item){ index = i; node = null } else node = node.next()
+			};
+			i = i + 1
+		};	
+		index
+	};
+
+	def lastIndexOf(item : Any) : Int = {
+		var index : Int = -1;
+		var node : LinkedListNode = head;
+		var i : Int = 0;
+		while(node match { case null => false case l:LinkedListNode => true}){
+			node.get() match {
+				case null => item match { case null => {index = i} case o:Any => {}}
+				case o:Any => if(o == item) index = i else {}
+			};
+		node = node.next(); i = i + 1
+		};
+		index
+	};
+
+	
+
+	override def toString() : String = {
+		var node : LinkedListNode = head;
+		var string : String = "[";
+		while(node match { case null => false case l:LinkedListNode => true}){
+			string = string.concat( node.toString()).concat(node.next() match { case null => "]" case l:LinkedListNode => ", "});
+			node = node.next()
+		};
+		string
+	};
+
+	
+
+}
+
+//Linked List Node
+class LinkedListNode(var value : Any){
+	
+	var tail : LinkedListNode = null;
+
+	def set(nValue : Any) : Unit = value = nValue;
+
+	def get() : Any = value;
+
+	def next() : LinkedListNode = tail;
+
+	def add(node : LinkedListNode) : Unit = {tail match {
+						case null => tail = node 
+						case l:LinkedListNode => l.add(node)}};
+
+	def setNext(next : LinkedListNode) : Unit = tail = next;
+
+	override def toString() : String = value match { case null => "null" case a:Any => a.toString()};
+}
+
+/*List implementation in Cool
+  It is basically a wrapper around an ArrayAny for more dynamic/practical use*/
+class List() extends IO() {
+	
+	var array : ArrayAny = new ArrayAny(0);
+
+	var algo : Algo = new Algo();
+
+	def length() : Int = array.length();
+
+	def isEmpty() : Boolean = 0 < array.length();
+
+	def clear() : Unit = array = array.resize(0);
+
+	def get(index : Int) : Any = array.get(index);
+
+	def add(item : Any) : Any = {
+		var length : Int = array.length();
+		array = array.resize(length + 1);
+		array.set(length,item)
+	};
+
+	def replace(oldItem : Any, newItem : Any ) : Unit = algo.replace(array, oldItem, newItem);
+
+	def replaceAll(oldItem : Any, newItem : Any) : Unit = algo.replaceAll(array, oldItem, newItem);
+
+	def insert(index : Int, item : Any) : Unit = algo.insert(array, index, item);
+	
+	def removeFirst() : Any = if(array.length() == 0) abort("IndexOutOfRange Exception at removeFirst") else{
+				var item : Any = array.get(0); removeAt(0); item};
+
+	def remove(item : Any) : Unit = array = algo.remove(array,item);
+
+	def removeAt(index : Int) : Unit = array = algo.removeAt(array, index);
+
+	def removeAll(item : Any) : Unit = array = algo.removeAll(array, item);
+	
+	def lastIndexOf(item : Any) : Int = algo.lastIndexOf(array, item);
+
+	def indexOf(item : Any) : Int = algo.indexOf(array, item);
+	
+	def contains(item : Any) : Boolean = !(indexOf(item) == -1);
+
+	override def toString() : String = {
+		var count : Int = array.length();
+		if(count == 0){ "[]" }else{
+	 		var i : Int = 0;
+	 		var string : String = "[";
+	 		while(i < count-1){
+	 			
+	 			string = string.concat(array.get(i) match { case null => "null" case a:Any => a.toString()}).concat(", ");
+				i = i + 1
+	 		};
+	 	string.concat(array.get(i) match{ case null => "null" case a:Any => a.toString()}).concat("]")}
+	};
+}
+
+
+
+
+/*Strongly typed List. Restricts user to add items of type Int only. Casting as Int is done automatically. Additional functions exist
+like sort and min/max */
+class IntList() {
+	
+	var array : ArrayAny = new ArrayAny(0); //the data
+
+	var algo : Algo = new Algo(); //contains usefull functions
+
+	def length() : Int = array.length();
+
+	def isEmpty() : Boolean = 0 < array.length();
+
+	def clear() : Unit = array = array.resize(0);
+
+	def get(index : Int) : Int = array.get(index) match { case int:Int => int };	
+
+	def set(index : Int, item : Int) : Any = array.set(index, item);
+
+	def add(item : Int) : Unit = {
+		var length : Int = array.length();
+		array = array.resize(length + 1);
+		array.set(length,item); ()
+	};
+
+	def replace(oldItem : Int, newItem : Int ) : Unit = algo.replace(array, oldItem, newItem);
+
+	def replaceAll(oldItem : Int, newItem : Int) : Unit = algo.replaceAll(array, oldItem, newItem);
+
+	def insert(index : Int, item : Int) : Unit = algo.insert(array, index, item);
+
+	def removeFirst() : Int = { var item : Int = get(0); removeAt(0); item};
+
+	def removeAt(index : Int) : Unit = array = algo.removeAt(array, index);
+
+	def removeAll(item : Int) : Unit = array = algo.removeAll(array, item);
+
+	def lastIndexOf(item : Int) : Int = algo.lastIndexOf(array, item);
+
+	def indexOf(item : Int) : Int = algo.lastIndexOf(array, item);
+	
+	def contains(item : Int) : Boolean = !(indexOf(item) == -1);
+
+	def min() : Int = algo.min(this);
+
+	def max() : Int = algo.max(this);
+
+	def sort() : Unit = algo.inserSort(this);
+
+	def sortD() : Unit = algo.inserSortD(this);
+
+	override def toString() : String = {
+		var count : Int = array.length();
+		if(count == 0){ "[]" }else{
+	 		var i : Int = 0;
+	 		var string : String = "[";
+	 		while(i < count-1){
+	 			
+	 			string = string.concat(array.get(i).toString()).concat(", ");
+				i = i + 1
+	 		};
+	 	string.concat(array.get(i).toString()).concat("]")}
+	};
+}
+
+/*Class containing (usefull) algorithms*/
+class Algo() extends IO() {
+	
+	//insertion sort ascending
+	def inserSort(array : IntList) : Unit = {
+		var count : Int = array.length();
+		var i : Int = 1;
+		var j : Int = 1;
+		while(i < count){
+			var tmp : Int = array.get(i);
+			j = i;
+			var loop : Boolean = true;
+			while(loop){
+				if(1 <= j){
+					if(tmp < array.get(j-1)){ 
+						array.set(j,array.get(j-1));
+						j = j - 1 
+					}else {loop = false}
+				}else{loop = false}
+			};
+			array.set(j,tmp);
+			i = i + 1
+		}
+	};
+
+	//insertion sort descending
+	def inserSortD(array : IntList) : Unit = {
+		var count : Int = array.length();
+		var i : Int = 1;
+		var j : Int = 1;
+		while(i < count){
+			var tmp : Int = array.get(i);
+			j = i;
+			var loop : Boolean = true;
+			while(loop){
+				if(1 <= j){
+					if(array.get(j-1) < tmp){ array.set(j,array.get(j-1)) }else {loop = false};
+					j = j - 1
+				}else{loop = false}
+			};
+			array.set(j,tmp);
+			i = i + 1
+		}
+	};
+
+	def quickSort(array : IntList, left : Int, right : Int) : Unit = {
+		var i : Int = left; 
+		var j : Int = right;
+		var tmp : Int = 0;
+		var pivot : Int = array.get((left + right) / 2);
+
+		/*partition*/
+		while(i <= j){
+			while(array.get(i) < pivot){
+				i = i + 1
+			};
+			while(pivot < array.get(j)){
+				j = j - 1	
+			};
+			if( i <= j){
+				tmp = array.get(i);
+				array.set(i, array.get(j));
+				array.set(j, tmp);
+				i = i + 1;
+				j = j - 1
+			}else {}
+		};
+		/*recursion*/
+		if(left < j){
+			quickSort(array,left,j)
+		}else{};
+		if(i < right){
+			quickSort(array,i,right)
+		}else ()
+	};
+
+	def quickSortD(array : IntList, left : Int, right : Int) : Unit = {
+		var i : Int = left; 
+		var j : Int = right;
+		var tmp : Int = 0;
+		var pivot : Int = array.get((left + right) / 2);
+
+		/*partition*/
+		while(i <= j){
+			while(pivot < array.get(i)){
+				i = i + 1
+			};
+			while(array.get(j) < pivot){
+				j = j - 1	
+			};
+			if( i <= j){
+				tmp = array.get(i);
+				array.set(i, array.get(j));
+				array.set(j, tmp);
+				i = i + 1;
+				j = j - 1
+			}else {}
+		};
+		/*recursion*/
+		if(left < j){
+			quickSortD(array,left,j)
+		}else{};
+		if( i < right){
+			quickSortD(array,i,right)
+		}else ()
+	};
+
+	//get max integer from IntList
+	def max(array : IntList) : Int = {
+		var count : Int = array.length();
+		if(count == 0) 0 else {
+			var max : Int = array.get(0);
+			var i : Int = 1;
+			while(i < count){
+				var n : Int = array.get(i);
+				if(max < n) max = n else ();
+					i = i + 1
+			};
+		max}
+	};
+
+	//get min integer from IntList
+	def min(array : IntList) :Int = {
+		var count : Int = array.length();
+		if(count == 0) 0 else {
+			var min : Int = array.get(0);
+			var i : Int = 1;
+			while(i < count){
+				var n : Int = array.get(i);
+				if(n < min) min = n else ();
+					i = i + 1
+			}; 
+		min}
+	};
+
+	
+	//Removes first occurence of item from array
+	def remove(array : ArrayAny, item : Any) : ArrayAny = {
+		var i : Int = 0;
+		var count : Int = array.length();
+		while(i < count) {
+			array.get(i) match {    case null => item match { case null=> removeAt(array,i);i = count //abort
+									 case a:Any=> i = i + 1}
+						case a:Any => 
+						if(a == item){
+							removeAt(array,i);
+							i = count
+						} else i = i + 1
+					   }
+		};
+		array
+	};
+
+	//Removes all occurrences of item from array
+	def removeAll(array : ArrayAny, item : Any) : ArrayAny = {
+		var i : Int = 0;
+		var count : Int = array.length();
+		while(i < count) {
+			array.get(i) match {	case null => item match{ case null=> array = removeAt(array,i); count = count - 1
+									 case a:Any=> i = i + 1}
+						case a:Any => 
+						if(a == item){
+							array = removeAt(array,i);
+							count = count - 1
+						} else i = i + 1
+					   }
+		};
+		array
+	};
+
+	//Removes item at index in array
+	def removeAt(array : ArrayAny, index : Int) : ArrayAny = {
+		var length : Int = array.length();		
+			if(if(index < 0) false else if(length <= index) false else true){
+				var max : Int = length - 1;
+				var i : Int = index;
+				while( i < max ){
+					array.set(i,array.get(i + 1));
+					i = i + 1
+				};
+				array.resize(max)
+			}else {abort( "IndexOutOfRange at function 'removeAt' in ".concat(toString()))}
+	};
+
+	/*insert item at index, array grows by 1.
+	  if index is larger than length-1, item is added to the back
+	  if index is smaller than 0, item is pushed to the front */
+	def insert(array : ArrayAny, index : Int, item : Any) : Unit = {
+		var length : Int = array.length();
+		array = array.resize(length + 1);
+		if(length <= index ){
+			array.set(length,item)
+		}else{
+			if(index < 0){
+				index = 0
+			}else{};
+			var i : Int = length;
+			while(index < i){
+				array.set(i,array.get(i-1));
+				i = i - 1
+			};
+			array.set(index,item)
+		};()
+	};
+
+	/*replaces FIRST occurrence of oldItem with newItem*/
+	def replace(array : ArrayAny, oldItem : Any, newItem : Any ) : Unit = {
+		var i : Int = 0;
+		var length : Int = array.length();
+		while(i < length) {
+			array.get(i) match {	case null => oldItem match { case null => array.set(i,newItem); i = length //abort
+										case a:Any => i = i + 1}			
+						case item:Any => 
+							if(item == oldItem){
+								array.set(i,newItem);
+								i = length//abort while
+							} else i = i + 1
+					   }
+		}
+	};
+
+	/*replaces ALL occurrences of oldItem with newitem*/
+	def replaceAll(array : ArrayAny, oldItem : Any, newItem : Any) : Unit = {
+		var i : Int = array.length() - 1;
+		while(0 <= i) {
+			array.get(i) match {	case null => oldItem match { case null => array.set(i, newItem)
+										case a:Any => {}} 
+						case item:Any => 
+						if(item == oldItem){
+							array.set(i,newItem)
+						} else {}
+					   };
+		i = i - 1
+		}
+	};
+
+	//returns last index of matched item, returns -1 on no match
+	def lastIndexOf(array : ArrayAny, item : Any) : Int = {
+		var i : Int = array.length() - 1;
+		var index : Int = -1;
+		while(0 <= i) {
+			array.get(i) match {	case null => item match{ case null=> index = i; i = -1 //abort while
+									 case a:Any=> i = i - 1} 
+						case a:Any => 
+						if(a == item){
+							index = i;
+							i = -1 //abort while
+						} else i = i - 1
+					   }
+		};
+		index	
+	};
+
+	//returns first index of matched item, returns -1 on no match
+	def indexOf(array : ArrayAny, item : Any) : Int = {
+		var i : Int = 0;
+		var index : Int = -1;
+		var count : Int = array.length();
+		while(i < count) {
+			array.get(i) match {	case null => item match{ case null=> index = i; i = count //abort while
+									 case a:Any=> i = i + 1} 
+						case a:Any => 
+						if(a == item){
+							index = i;
+							i = count //abort while
+						} else i = i + 1
+					   }
+		};
+		index	
+	};
+}
+
+class Stack(){
+	var array : ArrayAny = new ArrayAny(0);
+
+	def push(item : Any) : Unit = {
+		var length : Int = array.length();
+		array = array.resize(length + 1);
+		array.set(length,item);()
+	};
+
+	def pop() : Any = {
+		var length : Int = array.length()-1;
+		var item : Any = array.get(length);
+		array = array.resize(length);
+		item
+	};
+
+	def top() : Any = array.get(array.length()-1);
+
+	def size() : Int = array.length();
+
+	def isEmpty() : Boolean = array.length() == 0;
+
+	override def toString() : String = {
+		var string : String = "[";
+		var i : Int = 0;
+		var length : Int = array.length();
+		while( i < length){
+			var item : Any = array.get(i);
+			item match {
+				case null => string = string.concat("null")
+				case a:Any => string = string.concat(item.toString())
+			};
+			string = string.concat(if(i<length-1){", "}else{"]"});
+			i = i + 1
+		};
+		string
+	};
+}
+
+class Math() {
+	
+def abs(n : Int) : Int = if(n < 0) n * -1 else n;
+
+def add(n1 : Int, n2 : Int) : Int = n1 + n2;
+
+def div(n1 : Int, n2 : Int) : Int = n1 / n2;
+
+def fact(n : Int) : Int = if (n <= 1 ) 1 else n * fact(n - 1);
+
+def pow(n : Int) : Int = n * n;
+
+def powTo(n : Int, e : Int) : Int = if ( e == 1) n else n * powTo(n, e - 1);
+
+def max(n1 : Int, n2 : Int) : Int = if(n1 < n2) n2 else n1;
+
+def min(n1 : Int, n2 : Int) : Int = if(n1 < n2) n1 else n2;
+
+def mod(n1 : Int, n2 : Int) : Int = n1 - n2 * (n1 / n2);
+
+def mul(n1 : Int, n2 : Int) : Int = n1 * n2;
+
+def sub(n1 : Int, n2 : Int) : Int = n1 - n2;
+
+}

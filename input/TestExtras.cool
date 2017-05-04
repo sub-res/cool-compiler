@@ -1,0 +1,165 @@
+class Main() extends IO(){
+	
+{
+	out("-------Begin List test-------\n");
+	var list : List = new List();
+
+	list.add("Alpha");
+	list.add("Beta");
+	list.add("Charlie");
+	list.add("Foxtrot");
+	list.add(1);
+	list.add(true);
+	list.add(false);
+	list.add(1);
+	list.add(null);
+	out("Initial list: ");
+	out(list.toString());
+	out("\nLength: ");
+	out(list.length().toString());
+	out("\nAfter removing all 1's: ");
+	list.removeAll(1);
+	out(list.toString());
+	out("\nAfter replacing true with false: ");
+	list.replace(true,false);
+	out(list.toString());
+	out("\nAfter removing item at index 2: ");
+	list.removeAt(2);	
+	out(list.toString());
+	out("\nAfter removing item at index 0: ");
+	list.removeAt(0);	
+	out(list.toString());
+	out("\nIndex of null: ");
+	out(list.indexOf(null).toString());
+	out("\nLast index of false: ");
+	out(list.lastIndexOf(false).toString());
+	out("\nAfter removing first: ");
+	list.removeFirst();
+	out(list.toString());
+	out("\nLength: ");
+	out(list.length().toString());
+	out("\n-------End List test-------")
+};
+
+	
+{
+	out("\n\n-------Begin IntList test-------\n");
+	var list : IntList = new IntList();
+	list.add(2);
+	list.add(8);
+	list.add(3);
+	list.add(15);
+	list.add(1);
+	list.add(-10);
+	list.add(66);
+	out("Initial list: ");
+	out(list.toString());
+	out("\nLength: ");
+	out(list.length().toString());
+	out("\nAfter removing all 2's: ");
+	list.removeAll(2);
+	out(list.toString());
+	out("\nAfter replacing 8 with 13");
+	list.replace(8,13);
+	out(list.toString());
+	out("\nAfter sorting in ascending order: ");
+	list.sort();
+	out(list.toString());
+	out("\nAfter sorting in descending order: ");
+	list.sortD();	
+	out(list.toString());
+	out("\nAfter removing item at index 2: ");
+	list.removeAt(2);	
+	out(list.toString());
+	out("\nAfter removing item at index 0: ");
+	list.removeAt(0);	
+	out(list.toString());
+	out("\nIndex of -10: ");
+	out(list.indexOf(-10).toString());
+	out("\nLast index of 80: ");
+	out(list.lastIndexOf(80).toString());
+	out("\nAfter removing first: ");
+	list.removeFirst();
+	out(list.toString());
+	out("\nLength: ");
+	out(list.length().toString());
+	out("\n-------End IntList test-------")
+};
+
+{
+	
+	out("\n\n-------Begin LinkedList test-------\n");
+	var list : LinkedList = new LinkedList();
+
+	list.add("Alpha");
+	list.add("Beta");
+	list.add("Charlie");
+	list.add("Foxtrot");
+	list.add(1);
+	list.add(true);
+	list.add(false);
+	list.add(1);
+	list.add(null);
+	out("Initial list: ");
+	out(list.toString());
+	out("\nLength: ");
+	out(list.length().toString());
+	out("\nAfter removing all 1's: ");
+	list.removeAll(1);
+	out(list.toString());
+	out("\nAfter replacing true with false: ");
+	list.replace(true,false);
+	out(list.toString());
+	out("\nAfter removing item at index 2: ");
+	list.removeAt(2);	
+	out(list.toString());
+	out("\nAfter removing item at index 0: ");
+	list.removeAt(0);	
+	out(list.toString());
+	out("\nIndex of null: ");
+	out(list.indexOf(null).toString());
+	out("\nLast index of false: ");
+	out(list.lastIndexOf(false).toString());
+	out("\nAfter removing first: ");
+	list.removeFirst();
+	out(list.toString());
+	out("\nLength: ");
+	out(list.length().toString());
+	out("\n-------End LinkedList test-------")
+};
+
+{
+	out("\n\n-------Begin Stack test-------");
+	var stack : Stack = new Stack();
+	stack.push("Alpha");
+	stack.push("Beta");
+	stack.push("Charlie");
+	stack.push(23);
+	stack.push(new Boolean());
+	out("\nInitial stack:\n"); 
+	out(stack.toString());
+	out("\nElement from pop: ");
+	out(stack.pop().toString());
+	out("\nTop element on stack: ");
+	out(stack.top().toString());
+	out("\n-------End Stack test-------")	
+};
+
+{
+
+	out("\n\n-------Begin Math test-------\n");
+	var math : Math = new Math();
+	out("Power of 3: "); out_any(math.pow(3));
+	out("\n3 ^ 4: ");out_any(math.powTo(3,4));
+	out("\n5 mod 2: ");out_any(math.mod(5,2));
+	out("\nFactorial 6: ");out_any(math.fact(6));
+	out("\nAbsolute value of -1: ");out_any(math.abs(-1));
+	out("\nMax of 34 and 67: ");out_any(math.max(34,67));
+	out("\nMin of 23 and 90: ");out_any(math.min(23,90));
+	out("\nResult of expression (1+3)*((23-6)-4/2) = ");
+	var result : Int = (1 +3) * ((23-6) - 4/2);
+	out(result.toString());
+	out("\n\n-------End Math test-------\n")
+};
+
+}

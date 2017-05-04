@@ -1,0 +1,76 @@
+
+
+/*Cool program that prints Fibonacci numbers based on user's choice.
+Note: Program depends on external class Parser found in Parser.cool.
+*/
+class Main() extends IO(){
+	
+{
+	var p : Parser = new Parser(); //used for parsing String to Int
+ 	var run : Boolean = true;  //run indicator
+ 
+	while(run){
+		//give user multiple choice
+		out("""What do you want to do?\n 0: Print first n Fibonacci numbers
+ 1: Print nth Fibonacci number (Recursive)
+ 2: Print nth Fibonacci number (Iterative)
+ 3: Exit program\n""");
+
+	var choice : Int = -1;
+
+	//repeat while choice is invalid
+	while(if(choice < 0) true else 3 < choice){
+		out("Enter your choice: ");
+		choice = p.strToInt(in())
+	};
+
+	if(choice == 3) run = false else {
+		var n : Int = -1;
+		
+		//repeat while not a positive number
+		while(n < 0){ 
+			out("Enter number: ");
+			n = p.strToInt(in())
+		};
+
+		//calculate and print
+		if(choice == 0) printFibs(n) else if(choice == 1) out_any(fibRec(n)) else out_any(fib(n));
+		out("\n\n")
+		}
+	}
+
+};
+
+
+//returns nth Fibonacci number using recursion
+def fibRec(n : Int) : Int = {
+ if(n < 2) n else fibRec(n - 1) + fibRec(n - 2)	
+};
+
+//returns nth Fibonacci number using iteration
+def fib(n : Int) : Int = {
+	fibList(n,false)
+};
+
+//print first n Fibonacci numbers using iteration
+def printFibs(n : Int) : Unit = {
+	fibList(n,true);()
+};
+
+/*returns nth Fibonacci number using iteration and 
+prints 0 to n if print is true*/
+def fibList(n : Int, print : Boolean) : Int = {
+	var f1 : Int = 0;
+	var f2 : Int = 1;
+	var f3 : Int = 0;
+	var c : Int = 1;
+	while(c <= n){
+		if(print) {out_any(f3); out(" ")} else ();
+		f3 = f1 + f2;
+		f1 = f2;
+		f2 = f3;
+		c = c + 1
+	};
+f1
+};
+}

@@ -1,0 +1,4 @@
+// error: Unexpected '{', expecting id or type
+class {
+}
+

@@ -1,0 +1,9558 @@
+#generated assembly output:
+	.data
+	.align	2
+	.globl	class_nameTab
+	.globl	Main_protObj
+	.globl	Int_protObj
+	.globl	String_protObj
+	.globl	Boolean_protObj
+	.globl	boolean_lit0
+	.globl	boolean_lit1
+	.globl	Symbol_protObj
+	.globl	heap_start
+	.globl	_MemMgr_INITIALIZER
+_MemMgr_INITIALIZER:
+	.word	_GenGC_Init
+	.globl	_MemMgr_COLLECTOR
+_MemMgr_COLLECTOR:
+	.word	_GenGC_Collect
+	.globl	_MemMgr_TEST
+_MemMgr_TEST:
+	.word	0
+	.word	-1
+string_const0:
+	.word	14
+	.word	5
+	.word	String_dispTab
+	.word	int_const0
+	.byte	0
+	.align	2
+	.word	-1
+string_const1:
+	.word	14
+	.word	6
+	.word	String_dispTab
+	.word	int_const1
+	.ascii	"Algo"
+	.byte	0
+	.align	2
+	.word	-1
+string_const2:
+	.word	14
+	.word	7
+	.word	String_dispTab
+	.word	int_const2
+	.ascii	"Extras.cool"
+	.byte	0
+	.align	2
+	.word	-1
+string_const3:
+	.word	14
+	.word	15
+	.word	String_dispTab
+	.word	int_const5
+	.ascii	"IndexOutOfRange at function 'removeAt' in "
+	.byte	0
+	.align	2
+	.word	-1
+string_const4:
+	.word	14
+	.word	6
+	.word	String_dispTab
+	.word	int_const6
+	.ascii	"IntList"
+	.byte	0
+	.align	2
+	.word	-1
+string_const5:
+	.word	14
+	.word	5
+	.word	String_dispTab
+	.word	int_const4
+	.ascii	"[]"
+	.byte	0
+	.align	2
+	.word	-1
+string_const6:
+	.word	14
+	.word	5
+	.word	String_dispTab
+	.word	int_const3
+	.ascii	"["
+	.byte	0
+	.align	2
+	.word	-1
+string_const7:
+	.word	14
+	.word	5
+	.word	String_dispTab
+	.word	int_const4
+	.ascii	", "
+	.byte	0
+	.align	2
+	.word	-1
+string_const8:
+	.word	14
+	.word	5
+	.word	String_dispTab
+	.word	int_const3
+	.ascii	"]"
+	.byte	0
+	.align	2
+	.word	-1
+string_const9:
+	.word	14
+	.word	7
+	.word	String_dispTab
+	.word	int_const7
+	.ascii	"LinkedList"
+	.byte	0
+	.align	2
+	.word	-1
+string_const10:
+	.word	14
+	.word	15
+	.word	String_dispTab
+	.word	int_const8
+	.ascii	"IndexOutOfRange Exception at removeFirst"
+	.byte	0
+	.align	2
+	.word	-1
+string_const11:
+	.word	14
+	.word	9
+	.word	String_dispTab
+	.word	int_const9
+	.ascii	"IndexOutOfRange: "
+	.byte	0
+	.align	2
+	.word	-1
+string_const12:
+	.word	14
+	.word	8
+	.word	String_dispTab
+	.word	int_const10
+	.ascii	"LinkedListNode"
+	.byte	0
+	.align	2
+	.word	-1
+string_const13:
+	.word	14
+	.word	6
+	.word	String_dispTab
+	.word	int_const1
+	.ascii	"null"
+	.byte	0
+	.align	2
+	.word	-1
+string_const14:
+	.word	14
+	.word	6
+	.word	String_dispTab
+	.word	int_const1
+	.ascii	"List"
+	.byte	0
+	.align	2
+	.word	-1
+string_const15:
+	.word	14
+	.word	6
+	.word	String_dispTab
+	.word	int_const1
+	.ascii	"Main"
+	.byte	0
+	.align	2
+	.word	-1
+string_const16:
+	.word	14
+	.word	8
+	.word	String_dispTab
+	.word	int_const11
+	.ascii	"TestExtras.cool"
+	.byte	0
+	.align	2
+	.word	-1
+string_const17:
+	.word	14
+	.word	12
+	.word	String_dispTab
+	.word	int_const12
+	.ascii	"-------Begin List test-------\n"
+	.byte	0
+	.align	2
+	.word	-1
+string_const18:
+	.word	14
+	.word	6
+	.word	String_dispTab
+	.word	int_const13
+	.ascii	"Alpha"
+	.byte	0
+	.align	2
+	.word	-1
+string_const19:
+	.word	14
+	.word	6
+	.word	String_dispTab
+	.word	int_const1
+	.ascii	"Beta"
+	.byte	0
+	.align	2
+	.word	-1
+string_const20:
+	.word	14
+	.word	6
+	.word	String_dispTab
+	.word	int_const6
+	.ascii	"Charlie"
+	.byte	0
+	.align	2
+	.word	-1
+string_const21:
+	.word	14
+	.word	6
+	.word	String_dispTab
+	.word	int_const6
+	.ascii	"Foxtrot"
+	.byte	0
+	.align	2
+	.word	-1
+string_const22:
+	.word	14
+	.word	8
+	.word	String_dispTab
+	.word	int_const10
+	.ascii	"Initial list: "
+	.byte	0
+	.align	2
+	.word	-1
+string_const23:
+	.word	14
+	.word	7
+	.word	String_dispTab
+	.word	int_const7
+	.ascii	"\nLength: "
+	.byte	0
+	.align	2
+	.word	-1
+string_const24:
+	.word	14
+	.word	11
+	.word	String_dispTab
+	.word	int_const14
+	.ascii	"\nAfter removing all 1's: "
+	.byte	0
+	.align	2
+	.word	-1
+string_const25:
+	.word	14
+	.word	13
+	.word	String_dispTab
+	.word	int_const15
+	.ascii	"\nAfter replacing true with false: "
+	.byte	0
+	.align	2
+	.word	-1
+string_const26:
+	.word	14
+	.word	13
+	.word	String_dispTab
+	.word	int_const16
+	.ascii	"\nAfter removing item at index 2: "
+	.byte	0
+	.align	2
+	.word	-1
+string_const27:
+	.word	14
+	.word	13
+	.word	String_dispTab
+	.word	int_const16
+	.ascii	"\nAfter removing item at index 0: "
+	.byte	0
+	.align	2
+	.word	-1
+string_const28:
+	.word	14
+	.word	9
+	.word	String_dispTab
+	.word	int_const9
+	.ascii	"\nIndex of null: "
+	.byte	0
+	.align	2
+	.word	-1
+string_const29:
+	.word	14
+	.word	10
+	.word	String_dispTab
+	.word	int_const17
+	.ascii	"\nLast index of false: "
+	.byte	0
+	.align	2
+	.word	-1
+string_const30:
+	.word	14
+	.word	11
+	.word	String_dispTab
+	.word	int_const18
+	.ascii	"\nAfter removing first: "
+	.byte	0
+	.align	2
+	.word	-1
+string_const31:
+	.word	14
+	.word	12
+	.word	String_dispTab
+	.word	int_const19
+	.ascii	"\n-------End List test-------"
+	.byte	0
+	.align	2
+	.word	-1
+string_const32:
+	.word	14
+	.word	14
+	.word	String_dispTab
+	.word	int_const20
+	.ascii	"\n\n-------Begin IntList test-------\n"
+	.byte	0
+	.align	2
+	.word	-1
+string_const33:
+	.word	14
+	.word	11
+	.word	String_dispTab
+	.word	int_const14
+	.ascii	"\nAfter removing all 2's: "
+	.byte	0
+	.align	2
+	.word	-1
+string_const34:
+	.word	14
+	.word	11
+	.word	String_dispTab
+	.word	int_const24
+	.ascii	"\nAfter replacing 8 with 13"
+	.byte	0
+	.align	2
+	.word	-1
+string_const35:
+	.word	14
+	.word	14
+	.word	String_dispTab
+	.word	int_const26
+	.ascii	"\nAfter sorting in ascending order: "
+	.byte	0
+	.align	2
+	.word	-1
+string_const36:
+	.word	14
+	.word	14
+	.word	String_dispTab
+	.word	int_const27
+	.ascii	"\nAfter sorting in descending order: "
+	.byte	0
+	.align	2
+	.word	-1
+string_const37:
+	.word	14
+	.word	9
+	.word	String_dispTab
+	.word	int_const28
+	.ascii	"\nIndex of -10: "
+	.byte	0
+	.align	2
+	.word	-1
+string_const38:
+	.word	14
+	.word	10
+	.word	String_dispTab
+	.word	int_const29
+	.ascii	"\nLast index of 80: "
+	.byte	0
+	.align	2
+	.word	-1
+string_const39:
+	.word	14
+	.word	13
+	.word	String_dispTab
+	.word	int_const31
+	.ascii	"\n-------End IntList test-------"
+	.byte	0
+	.align	2
+	.word	-1
+string_const40:
+	.word	14
+	.word	15
+	.word	String_dispTab
+	.word	int_const32
+	.ascii	"\n\n-------Begin LinkedList test-------\n"
+	.byte	0
+	.align	2
+	.word	-1
+string_const41:
+	.word	14
+	.word	13
+	.word	String_dispTab
+	.word	int_const15
+	.ascii	"\n-------End LinkedList test-------"
+	.byte	0
+	.align	2
+	.word	-1
+string_const42:
+	.word	14
+	.word	13
+	.word	String_dispTab
+	.word	int_const16
+	.ascii	"\n\n-------Begin Stack test-------"
+	.byte	0
+	.align	2
+	.word	-1
+string_const43:
+	.word	14
+	.word	9
+	.word	String_dispTab
+	.word	int_const33
+	.ascii	"\nInitial stack:\n"
+	.byte	0
+	.align	2
+	.word	-1
+string_const44:
+	.word	14
+	.word	10
+	.word	String_dispTab
+	.word	int_const29
+	.ascii	"\nElement from pop: "
+	.byte	0
+	.align	2
+	.word	-1
+string_const45:
+	.word	14
+	.word	11
+	.word	String_dispTab
+	.word	int_const18
+	.ascii	"\nTop element on stack: "
+	.byte	0
+	.align	2
+	.word	-1
+string_const46:
+	.word	14
+	.word	12
+	.word	String_dispTab
+	.word	int_const34
+	.ascii	"\n-------End Stack test-------"
+	.byte	0
+	.align	2
+	.word	-1
+string_const47:
+	.word	14
+	.word	13
+	.word	String_dispTab
+	.word	int_const15
+	.ascii	"\n\n-------Begin Math test-------\n"
+	.byte	0
+	.align	2
+	.word	-1
+string_const48:
+	.word	14
+	.word	8
+	.word	String_dispTab
+	.word	int_const35
+	.ascii	"Power of 3: "
+	.byte	0
+	.align	2
+	.word	-1
+string_const49:
+	.word	14
+	.word	7
+	.word	String_dispTab
+	.word	int_const36
+	.ascii	"\n3 ^ 4: "
+	.byte	0
+	.align	2
+	.word	-1
+string_const50:
+	.word	14
+	.word	7
+	.word	String_dispTab
+	.word	int_const2
+	.ascii	"\n5 mod 2: "
+	.byte	0
+	.align	2
+	.word	-1
+string_const51:
+	.word	14
+	.word	8
+	.word	String_dispTab
+	.word	int_const11
+	.ascii	"\nFactorial 6: "
+	.byte	0
+	.align	2
+	.word	-1
+string_const52:
+	.word	14
+	.word	11
+	.word	String_dispTab
+	.word	int_const18
+	.ascii	"\nAbsolute value of -1: "
+	.byte	0
+	.align	2
+	.word	-1
+string_const53:
+	.word	14
+	.word	10
+	.word	String_dispTab
+	.word	int_const29
+	.ascii	"\nMax of 34 and 67: "
+	.byte	0
+	.align	2
+	.word	-1
+string_const54:
+	.word	14
+	.word	10
+	.word	String_dispTab
+	.word	int_const29
+	.ascii	"\nMin of 23 and 90: "
+	.byte	0
+	.align	2
+	.word	-1
+string_const55:
+	.word	14
+	.word	16
+	.word	String_dispTab
+	.word	int_const40
+	.ascii	"\nResult of expression (1+3)*((23-6)-4/2) = "
+	.byte	0
+	.align	2
+	.word	-1
+string_const56:
+	.word	14
+	.word	13
+	.word	String_dispTab
+	.word	int_const41
+	.ascii	"\n\n-------End Math test-------\n"
+	.byte	0
+	.align	2
+	.word	-1
+string_const57:
+	.word	14
+	.word	6
+	.word	String_dispTab
+	.word	int_const1
+	.ascii	"Math"
+	.byte	0
+	.align	2
+	.word	-1
+string_const58:
+	.word	14
+	.word	6
+	.word	String_dispTab
+	.word	int_const13
+	.ascii	"Stack"
+	.byte	0
+	.align	2
+	.word	-1
+string_const59:
+	.word	14
+	.word	5
+	.word	String_dispTab
+	.word	int_const22
+	.ascii	"Any"
+	.byte	0
+	.align	2
+	.word	-1
+string_const60:
+	.word	14
+	.word	9
+	.word	String_dispTab
+	.word	int_const9
+	.ascii	"intern/basic.cool"
+	.byte	0
+	.align	2
+	.word	-1
+string_const61:
+	.word	14
+	.word	7
+	.word	String_dispTab
+	.word	int_const21
+	.ascii	"ArrayAny"
+	.byte	0
+	.align	2
+	.word	-1
+string_const62:
+	.word	14
+	.word	6
+	.word	String_dispTab
+	.word	int_const6
+	.ascii	"Boolean"
+	.byte	0
+	.align	2
+	.word	-1
+string_const63:
+	.word	14
+	.word	6
+	.word	String_dispTab
+	.word	int_const1
+	.ascii	"true"
+	.byte	0
+	.align	2
+	.word	-1
+string_const64:
+	.word	14
+	.word	6
+	.word	String_dispTab
+	.word	int_const13
+	.ascii	"false"
+	.byte	0
+	.align	2
+	.word	-1
+string_const65:
+	.word	14
+	.word	5
+	.word	String_dispTab
+	.word	int_const4
+	.ascii	"IO"
+	.byte	0
+	.align	2
+	.word	-1
+string_const66:
+	.word	14
+	.word	5
+	.word	String_dispTab
+	.word	int_const22
+	.ascii	"Int"
+	.byte	0
+	.align	2
+	.word	-1
+string_const67:
+	.word	14
+	.word	7
+	.word	String_dispTab
+	.word	int_const7
+	.ascii	"Statistics"
+	.byte	0
+	.align	2
+	.word	-1
+string_const68:
+	.word	14
+	.word	6
+	.word	String_dispTab
+	.word	int_const37
+	.ascii	"String"
+	.byte	0
+	.align	2
+	.word	-1
+string_const69:
+	.word	14
+	.word	6
+	.word	String_dispTab
+	.word	int_const37
+	.ascii	"Symbol"
+	.byte	0
+	.align	2
+	.word	-1
+string_const70:
+	.word	14
+	.word	5
+	.word	String_dispTab
+	.word	int_const3
+	.ascii	"'"
+	.byte	0
+	.align	2
+	.word	-1
+string_const71:
+	.word	14
+	.word	6
+	.word	String_dispTab
+	.word	int_const1
+	.ascii	"Unit"
+	.byte	0
+	.align	2
+	.word	-1
+int_const0:
+	.word	12
+	.word	4
+	.word	Int_dispTab
+	.word	0
+	.word	-1
+int_const1:
+	.word	12
+	.word	4
+	.word	Int_dispTab
+	.word	4
+	.word	-1
+int_const2:
+	.word	12
+	.word	4
+	.word	Int_dispTab
+	.word	11
+	.word	-1
+int_const3:
+	.word	12
+	.word	4
+	.word	Int_dispTab
+	.word	1
+	.word	-1
+int_const4:
+	.word	12
+	.word	4
+	.word	Int_dispTab
+	.word	2
+	.word	-1
+int_const5:
+	.word	12
+	.word	4
+	.word	Int_dispTab
+	.word	42
+	.word	-1
+int_const6:
+	.word	12
+	.word	4
+	.word	Int_dispTab
+	.word	7
+	.word	-1
+int_const7:
+	.word	12
+	.word	4
+	.word	Int_dispTab
+	.word	10
+	.word	-1
+int_const8:
+	.word	12
+	.word	4
+	.word	Int_dispTab
+	.word	40
+	.word	-1
+int_const9:
+	.word	12
+	.word	4
+	.word	Int_dispTab
+	.word	17
+	.word	-1
+int_const10:
+	.word	12
+	.word	4
+	.word	Int_dispTab
+	.word	14
+	.word	-1
+int_const11:
+	.word	12
+	.word	4
+	.word	Int_dispTab
+	.word	15
+	.word	-1
+int_const12:
+	.word	12
+	.word	4
+	.word	Int_dispTab
+	.word	31
+	.word	-1
+int_const13:
+	.word	12
+	.word	4
+	.word	Int_dispTab
+	.word	5
+	.word	-1
+int_const14:
+	.word	12
+	.word	4
+	.word	Int_dispTab
+	.word	26
+	.word	-1
+int_const15:
+	.word	12
+	.word	4
+	.word	Int_dispTab
+	.word	35
+	.word	-1
+int_const16:
+	.word	12
+	.word	4
+	.word	Int_dispTab
+	.word	34
+	.word	-1
+int_const17:
+	.word	12
+	.word	4
+	.word	Int_dispTab
+	.word	23
+	.word	-1
+int_const18:
+	.word	12
+	.word	4
+	.word	Int_dispTab
+	.word	24
+	.word	-1
+int_const19:
+	.word	12
+	.word	4
+	.word	Int_dispTab
+	.word	29
+	.word	-1
+int_const20:
+	.word	12
+	.word	4
+	.word	Int_dispTab
+	.word	38
+	.word	-1
+int_const21:
+	.word	12
+	.word	4
+	.word	Int_dispTab
+	.word	8
+	.word	-1
+int_const22:
+	.word	12
+	.word	4
+	.word	Int_dispTab
+	.word	3
+	.word	-1
+int_const23:
+	.word	12
+	.word	4
+	.word	Int_dispTab
+	.word	66
+	.word	-1
+int_const24:
+	.word	12
+	.word	4
+	.word	Int_dispTab
+	.word	27
+	.word	-1
+int_const25:
+	.word	12
+	.word	4
+	.word	Int_dispTab
+	.word	13
+	.word	-1
+int_const26:
+	.word	12
+	.word	4
+	.word	Int_dispTab
+	.word	36
+	.word	-1
+int_const27:
+	.word	12
+	.word	4
+	.word	Int_dispTab
+	.word	37
+	.word	-1
+int_const28:
+	.word	12
+	.word	4
+	.word	Int_dispTab
+	.word	16
+	.word	-1
+int_const29:
+	.word	12
+	.word	4
+	.word	Int_dispTab
+	.word	20
+	.word	-1
+int_const30:
+	.word	12
+	.word	4
+	.word	Int_dispTab
+	.word	80
+	.word	-1
+int_const31:
+	.word	12
+	.word	4
+	.word	Int_dispTab
+	.word	32
+	.word	-1
+int_const32:
+	.word	12
+	.word	4
+	.word	Int_dispTab
+	.word	41
+	.word	-1
+int_const33:
+	.word	12
+	.word	4
+	.word	Int_dispTab
+	.word	18
+	.word	-1
+int_const34:
+	.word	12
+	.word	4
+	.word	Int_dispTab
+	.word	30
+	.word	-1
+int_const35:
+	.word	12
+	.word	4
+	.word	Int_dispTab
+	.word	12
+	.word	-1
+int_const36:
+	.word	12
+	.word	4
+	.word	Int_dispTab
+	.word	9
+	.word	-1
+int_const37:
+	.word	12
+	.word	4
+	.word	Int_dispTab
+	.word	6
+	.word	-1
+int_const38:
+	.word	12
+	.word	4
+	.word	Int_dispTab
+	.word	67
+	.word	-1
+int_const39:
+	.word	12
+	.word	4
+	.word	Int_dispTab
+	.word	90
+	.word	-1
+int_const40:
+	.word	12
+	.word	4
+	.word	Int_dispTab
+	.word	44
+	.word	-1
+int_const41:
+	.word	12
+	.word	4
+	.word	Int_dispTab
+	.word	33
+	.word	-1
+boolean_lit0:
+	.word	10
+	.word	4
+	.word	Boolean_dispTab
+	.word	0
+	.word	-1
+boolean_lit1:
+	.word	10
+	.word	4
+	.word	Boolean_dispTab
+	.word	1
+class_nameTab:
+	.word	string_const1	# 0 Algo
+	.word	string_const4	# 1 IntList
+	.word	string_const9	# 2 LinkedList
+	.word	string_const12	# 3 LinkedListNode
+	.word	string_const14	# 4 List
+	.word	string_const15	# 5 Main
+	.word	string_const57	# 6 Math
+	.word	string_const58	# 7 Stack
+	.word	string_const59	# 8 Any
+	.word	string_const61	# 9 ArrayAny
+	.word	string_const62	# 10 Boolean
+	.word	string_const65	# 11 IO
+	.word	string_const66	# 12 Int
+	.word	string_const67	# 13 Statistics
+	.word	string_const68	# 14 String
+	.word	string_const69	# 15 Symbol
+	.word	string_const71	# 16 Unit
+
+Algo_dispTab:
+	.word	Any.Any
+	.word	Any.toString
+	.word	Any.equals
+	.word	IO.IO
+	.word	IO.abort
+	.word	IO.out
+	.word	IO.is_null
+	.word	IO.out_any
+	.word	IO.in
+	.word	IO.symbol
+	.word	IO.symbol_name
+	.word	Algo.Algo
+	.word	Algo.inserSort
+	.word	Algo.inserSortD
+	.word	Algo.quickSort
+	.word	Algo.quickSortD
+	.word	Algo.max
+	.word	Algo.min
+	.word	Algo.remove
+	.word	Algo.removeAll
+	.word	Algo.removeAt
+	.word	Algo.insert
+	.word	Algo.replace
+	.word	Algo.replaceAll
+	.word	Algo.lastIndexOf
+	.word	Algo.indexOf
+Any_dispTab:
+	.word	Any.Any
+	.word	Any.toString
+	.word	Any.equals
+ArrayAny_dispTab:
+	.word	Any.Any
+	.word	Any.toString
+	.word	Any.equals
+	.word	ArrayAny.ArrayAny
+	.word	ArrayAny.length
+	.word	ArrayAny.resize
+	.word	ArrayAny.get
+	.word	ArrayAny.set
+Boolean_dispTab:
+	.word	Any.Any
+	.word	Boolean.toString
+	.word	Boolean.equals
+	.word	Boolean.Boolean
+IO_dispTab:
+	.word	Any.Any
+	.word	Any.toString
+	.word	Any.equals
+	.word	IO.IO
+	.word	IO.abort
+	.word	IO.out
+	.word	IO.is_null
+	.word	IO.out_any
+	.word	IO.in
+	.word	IO.symbol
+	.word	IO.symbol_name
+Int_dispTab:
+	.word	Any.Any
+	.word	Int.toString
+	.word	Int.equals
+	.word	Int.Int
+IntList_dispTab:
+	.word	Any.Any
+	.word	IntList.toString
+	.word	Any.equals
+	.word	IntList.IntList
+	.word	IntList.length
+	.word	IntList.isEmpty
+	.word	IntList.clear
+	.word	IntList.get
+	.word	IntList.set
+	.word	IntList.add
+	.word	IntList.replace
+	.word	IntList.replaceAll
+	.word	IntList.insert
+	.word	IntList.removeFirst
+	.word	IntList.removeAt
+	.word	IntList.removeAll
+	.word	IntList.lastIndexOf
+	.word	IntList.indexOf
+	.word	IntList.contains
+	.word	IntList.min
+	.word	IntList.max
+	.word	IntList.sort
+	.word	IntList.sortD
+LinkedList_dispTab:
+	.word	Any.Any
+	.word	LinkedList.toString
+	.word	Any.equals
+	.word	IO.IO
+	.word	IO.abort
+	.word	IO.out
+	.word	IO.is_null
+	.word	IO.out_any
+	.word	IO.in
+	.word	IO.symbol
+	.word	IO.symbol_name
+	.word	LinkedList.LinkedList
+	.word	LinkedList.add
+	.word	LinkedList.contains
+	.word	LinkedList.isEmpty
+	.word	LinkedList.removeFirst
+	.word	LinkedList.replace
+	.word	LinkedList.replaceAll
+	.word	LinkedList.removeAll
+	.word	LinkedList.remove
+	.word	LinkedList.removeAt
+	.word	LinkedList.insert
+	.word	LinkedList.length
+	.word	LinkedList.indexOf
+	.word	LinkedList.lastIndexOf
+LinkedListNode_dispTab:
+	.word	Any.Any
+	.word	LinkedListNode.toString
+	.word	Any.equals
+	.word	LinkedListNode.LinkedListNode
+	.word	LinkedListNode.set
+	.word	LinkedListNode.get
+	.word	LinkedListNode.next
+	.word	LinkedListNode.add
+	.word	LinkedListNode.setNext
+List_dispTab:
+	.word	Any.Any
+	.word	List.toString
+	.word	Any.equals
+	.word	IO.IO
+	.word	IO.abort
+	.word	IO.out
+	.word	IO.is_null
+	.word	IO.out_any
+	.word	IO.in
+	.word	IO.symbol
+	.word	IO.symbol_name
+	.word	List.List
+	.word	List.length
+	.word	List.isEmpty
+	.word	List.clear
+	.word	List.get
+	.word	List.add
+	.word	List.replace
+	.word	List.replaceAll
+	.word	List.insert
+	.word	List.removeFirst
+	.word	List.remove
+	.word	List.removeAt
+	.word	List.removeAll
+	.word	List.lastIndexOf
+	.word	List.indexOf
+	.word	List.contains
+Main_dispTab:
+	.word	Any.Any
+	.word	Any.toString
+	.word	Any.equals
+	.word	IO.IO
+	.word	IO.abort
+	.word	IO.out
+	.word	IO.is_null
+	.word	IO.out_any
+	.word	IO.in
+	.word	IO.symbol
+	.word	IO.symbol_name
+	.word	Main.Main
+Math_dispTab:
+	.word	Any.Any
+	.word	Any.toString
+	.word	Any.equals
+	.word	Math.Math
+	.word	Math.abs
+	.word	Math.add
+	.word	Math.div
+	.word	Math.fact
+	.word	Math.pow
+	.word	Math.powTo
+	.word	Math.max
+	.word	Math.min
+	.word	Math.mod
+	.word	Math.mul
+	.word	Math.sub
+Stack_dispTab:
+	.word	Any.Any
+	.word	Stack.toString
+	.word	Any.equals
+	.word	Stack.Stack
+	.word	Stack.push
+	.word	Stack.pop
+	.word	Stack.top
+	.word	Stack.size
+	.word	Stack.isEmpty
+Statistics_dispTab:
+	.word	Any.Any
+	.word	Any.toString
+	.word	Any.equals
+	.word	IO.IO
+	.word	IO.abort
+	.word	IO.out
+	.word	IO.is_null
+	.word	IO.out_any
+	.word	IO.in
+	.word	IO.symbol
+	.word	IO.symbol_name
+	.word	Statistics.Statistics
+	.word	Statistics.clear
+	.word	Statistics.get
+	.word	Statistics.print
+String_dispTab:
+	.word	Any.Any
+	.word	String.toString
+	.word	String.equals
+	.word	String.String
+	.word	String.length
+	.word	String.concat
+	.word	String.substring
+	.word	String.charAt
+	.word	String.indexOf
+Symbol_dispTab:
+	.word	Any.Any
+	.word	Symbol.toString
+	.word	Any.equals
+	.word	Symbol.Symbol
+	.word	Symbol.hashCode
+Unit_dispTab:
+	.word	Any.Any
+	.word	Any.toString
+	.word	Any.equals
+	.word	Unit.Unit
+	.word	-1
+
+Any_protObj:
+	.word	8
+	.word	3
+	.word	Any_dispTab
+	.word	-1
+
+ArrayAny_protObj:
+	.word	9
+	.word	5
+	.word	ArrayAny_dispTab
+	.word	int_const0	#length
+	.word	0		#array_field
+	.word	-1
+
+Boolean_protObj:
+	.word	10
+	.word	4
+	.word	Boolean_dispTab
+	.word	0		#value
+	.word	-1
+
+IO_protObj:
+	.word	11
+	.word	3
+	.word	IO_dispTab
+	.word	-1
+
+Int_protObj:
+	.word	12
+	.word	4
+	.word	Int_dispTab
+	.word	0		#value
+	.word	-1
+
+Statistics_protObj:
+	.word	13
+	.word	3
+	.word	Statistics_dispTab
+	.word	-1
+
+String_protObj:
+	.word	14
+	.word	5
+	.word	String_dispTab
+	.word	int_const0	#length
+	.word	0		#str_field
+	.word	-1
+
+Symbol_protObj:
+	.word	15
+	.word	6
+	.word	Symbol_dispTab
+	.word	0		#next
+	.word	string_const0	#name
+	.word	int_const0	#hash
+	.word	-1
+
+Unit_protObj:
+	.word	16
+	.word	3
+	.word	Unit_dispTab
+	.word	-1
+
+Algo_protObj:
+	.word	0
+	.word	3
+	.word	Algo_dispTab
+	.word	-1
+
+IntList_protObj:
+	.word	1
+	.word	5
+	.word	IntList_dispTab
+	.word	0		#array
+	.word	0		#algo
+	.word	-1
+
+LinkedList_protObj:
+	.word	2
+	.word	4
+	.word	LinkedList_dispTab
+	.word	0		#head
+	.word	-1
+
+LinkedListNode_protObj:
+	.word	3
+	.word	5
+	.word	LinkedListNode_dispTab
+	.word	0		#tail
+	.word	0		#value
+	.word	-1
+
+List_protObj:
+	.word	4
+	.word	5
+	.word	List_dispTab
+	.word	0		#array
+	.word	0		#algo
+	.word	-1
+
+Main_protObj:
+	.word	5
+	.word	3
+	.word	Main_dispTab
+	.word	-1
+
+Math_protObj:
+	.word	6
+	.word	3
+	.word	Math_dispTab
+	.word	-1
+
+Stack_protObj:
+	.word	7
+	.word	4
+	.word	Stack_dispTab
+	.word	0		#array
+heap_start:
+	.word	0
+	.text
+	.globl	Main.Main
+create_int:
+	addiu	$sp	$sp	-4
+	sw	$ra	4($sp)
+	la	$t0	Int_protObj
+	sw	$a0	12($t0)
+	move	$a0	$t0
+	jal	Any.clone
+	lw	$ra	4($sp)
+	addiu	$sp	$sp	4
+	jr	$ra
+lteq_helper:
+	addiu	$sp	$sp	-4
+	sw	$ra	4($sp)
+	lw	$a0	12($a0)
+	lw	$a1	12($a1)
+	sub	$a1	$a1	$a0
+	blez	$a1		create_bool1
+	j	create_bool0
+lt_helper:
+	addiu	$sp	$sp	-4
+	sw	$ra	4($sp)
+	lw	$a0	12($a0)
+	lw	$a1	12($a1)
+	sub	$a1	$a1	$a0
+	bltz	$a1		create_bool1
+	j	create_bool0
+create_bool0:
+	la	$a0	boolean_lit0
+	jal	Any.clone
+	j	bool_helper_end
+create_bool1:
+	la	$a0	boolean_lit1
+	jal	Any.clone
+	j	bool_helper_end
+bool_helper_end:
+	lw	$ra	4($sp)
+	addiu	$sp	$sp	4
+	jr	$ra
+negate:
+	lw	$a0	12($a0)
+	beq	$a0	$zero	negTrue
+	la	$a0	boolean_lit0
+	jr	$ra
+negTrue:
+	la	$a0	boolean_lit1
+	jr	$ra
+Algo.Algo:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s0
+
+	li	$t1	349
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	12($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	move	$a0	$s0
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	jr	$ra
+Algo.inserSort:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	12($sp)
+
+	li	$t1	353
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	16($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	move	$s2	$a0
+	la	$a0	int_const3
+	jal	Any.clone
+	move	$s3	$a0
+	la	$a0	int_const3
+	jal	Any.clone
+	move	$s4	$a0
+_while0:
+	move	$a0	$s3
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	move	$a0	$s2
+	lw	$a1	4($sp)		
+	sw	$ra	4($sp)		
+	jal	lt_helper
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_endwhile0
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	12($sp)
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	move	$a0	$s3
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	357
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	28($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	move	$s5	$a0
+	move	$a0	$s3
+
+	move	$s4	$a0
+	move	$a0	$zero
+	la	$a0	boolean_lit1
+	jal	Any.clone
+	move	$s6	$a0
+_while1:
+	move	$a0	$s6
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_endwhile1
+	la	$a0	int_const3
+	jal	Any.clone
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	move	$a0	$s4
+	lw	$a1	4($sp)		
+	sw	$ra	4($sp)		
+	jal	lteq_helper
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_else0
+	move	$a0	$s5
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	16($sp)
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	move	$a0	$s4
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	sub	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	362
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	28($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	lw	$a1	4($sp)		
+	sw	$ra	4($sp)		
+	jal	lt_helper
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_else1
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	12($sp)
+	addiu	$sp	$sp	-12	
+	sw	$a0	4($sp)
+	move	$a0	$s4
+	sw	$a0	12($sp)
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	28($sp)
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	move	$a0	$s4
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	sub	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	363
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	28($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	363
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	32($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	move	$a0	$s4
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	sub	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+
+	move	$s4	$a0
+	move	$a0	$zero
+	j	_endif1
+_else1:
+	la	$a0	boolean_lit0
+	jal	Any.clone
+
+	move	$s6	$a0
+	move	$a0	$zero
+_endif1:
+	j	_endif0
+_else0:
+	la	$a0	boolean_lit0
+	jal	Any.clone
+
+	move	$s6	$a0
+	move	$a0	$zero
+_endif0:
+	j	_while1
+
+_endwhile1:
+	move	$a0	$zero
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	12($sp)
+	addiu	$sp	$sp	-12	
+	sw	$a0	4($sp)
+	move	$a0	$s4
+	sw	$a0	12($sp)
+	move	$a0	$s5
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	368
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	32($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	move	$a0	$s3
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	add	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+
+	move	$s3	$a0
+	move	$a0	$zero
+	j	_while0
+
+_endwhile0:
+	move	$a0	$zero
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	8
+	jr	$ra
+Algo.inserSortD:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	12($sp)
+
+	li	$t1	375
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	16($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	move	$s2	$a0
+	la	$a0	int_const3
+	jal	Any.clone
+	move	$s3	$a0
+	la	$a0	int_const3
+	jal	Any.clone
+	move	$s4	$a0
+_while2:
+	move	$a0	$s3
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	move	$a0	$s2
+	lw	$a1	4($sp)		
+	sw	$ra	4($sp)		
+	jal	lt_helper
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_endwhile2
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	12($sp)
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	move	$a0	$s3
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	379
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	28($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	move	$s5	$a0
+	move	$a0	$s3
+
+	move	$s4	$a0
+	move	$a0	$zero
+	la	$a0	boolean_lit1
+	jal	Any.clone
+	move	$s6	$a0
+_while3:
+	move	$a0	$s6
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_endwhile3
+	la	$a0	int_const3
+	jal	Any.clone
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	move	$a0	$s4
+	lw	$a1	4($sp)		
+	sw	$ra	4($sp)		
+	jal	lteq_helper
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_else2
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	12($sp)
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	move	$a0	$s4
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	sub	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	384
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	28($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	sw	$a0	4($sp)		
+	move	$a0	$s5
+	lw	$a1	4($sp)		
+	sw	$ra	4($sp)		
+	jal	lt_helper
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_else3
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	12($sp)
+	addiu	$sp	$sp	-12	
+	sw	$a0	4($sp)
+	move	$a0	$s4
+	sw	$a0	12($sp)
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	28($sp)
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	move	$a0	$s4
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	sub	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	384
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	28($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	384
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	32($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	j	_endif3
+_else3:
+	la	$a0	boolean_lit0
+	jal	Any.clone
+
+	move	$s6	$a0
+	move	$a0	$zero
+_endif3:
+	move	$a0	$s4
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	sub	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+
+	move	$s4	$a0
+	move	$a0	$zero
+	j	_endif2
+_else2:
+	la	$a0	boolean_lit0
+	jal	Any.clone
+
+	move	$s6	$a0
+	move	$a0	$zero
+_endif2:
+	j	_while3
+
+_endwhile3:
+	move	$a0	$zero
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	12($sp)
+	addiu	$sp	$sp	-12	
+	sw	$a0	4($sp)
+	move	$a0	$s4
+	sw	$a0	12($sp)
+	move	$a0	$s5
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	388
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	32($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	move	$a0	$s3
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	add	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+
+	move	$s3	$a0
+	move	$a0	$zero
+	j	_while2
+
+_endwhile2:
+	move	$a0	$zero
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	8
+	jr	$ra
+Algo.removeAll:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	la	$a0	int_const0
+	jal	Any.clone
+	move	$s4	$a0
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	16($sp)
+
+	li	$t1	504
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	16($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	move	$s5	$a0
+_while4:
+	move	$a0	$s4
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	move	$a0	$s5
+	lw	$a1	4($sp)		
+	sw	$ra	4($sp)		
+	jal	lt_helper
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_endwhile4
+_match0:
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	16($sp)
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	move	$a0	$s4
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	506
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	24($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	beq	$a0	$zero	_match0_caseNull
+	addiu	$sp	$sp	-4
+	sw	$a0	4($sp)
+	lw	$t0	0($a0)
+	j	_match0_caseAny
+_match0_abort:
+	li	$t1	506
+	la	$a1	string_const2
+	j	_case_abort
+_match0_caseNull:
+_match1:
+	lw	$a0	8($sp)
+	beq	$a0	$zero	_match1_caseNull
+	addiu	$sp	$sp	-4
+	sw	$a0	4($sp)
+	lw	$t0	0($a0)
+	j	_match1_caseAny
+_match1_abort:
+	li	$t1	506
+	la	$a1	string_const2
+	j	_case_abort
+_match1_caseNull:
+	addiu	$sp	$sp	-8	
+	lw	$a0	20($sp)
+	sw	$a0	8($sp)
+	move	$a0	$s4
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	80($t1)
+	jalr	$t1
+
+	sw	$a0	12($sp)
+	move	$a0	$zero
+	move	$a0	$s5
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	sub	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+
+	move	$s5	$a0
+	move	$a0	$zero
+	j	_endmatchnull1
+_match1_caseAny:
+	move	$a0	$s4
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	add	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+
+	move	$s4	$a0
+	move	$a0	$zero
+	j	_endmatch1
+_endmatch1:
+	addiu	$sp	$sp	4
+_endmatchnull1:
+	j	_endmatchnull0
+_match0_caseAny:
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	8($sp)
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	lw	$a0	24($sp)
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	509
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	8($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_else4
+	addiu	$sp	$sp	-8	
+	lw	$a0	24($sp)
+	sw	$a0	8($sp)
+	move	$a0	$s4
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	80($t1)
+	jalr	$t1
+
+	sw	$a0	16($sp)
+	move	$a0	$zero
+	move	$a0	$s5
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	sub	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+
+	move	$s5	$a0
+	move	$a0	$zero
+	j	_endif4
+_else4:
+	move	$a0	$s4
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	add	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+
+	move	$s4	$a0
+	move	$a0	$zero
+_endif4:
+	j	_endmatch0
+_endmatch0:
+	addiu	$sp	$sp	4
+_endmatchnull0:
+	j	_while4
+
+_endwhile4:
+	move	$a0	$zero
+	lw	$a0	12($sp)
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	12
+	jr	$ra
+Algo.removeAt:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	16($sp)
+
+	li	$t1	520
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	16($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	move	$s3	$a0
+	lw	$a0	8($sp)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const0
+	jal	Any.clone
+	lw	$a1	4($sp)		
+	sw	$ra	4($sp)		
+	jal	lt_helper
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_else6
+	la	$a0	boolean_lit0
+	jal	Any.clone
+	j	_endif6
+_else6:
+	move	$a0	$s3
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	lw	$a0	12($sp)
+	lw	$a1	4($sp)		
+	sw	$ra	4($sp)		
+	jal	lteq_helper
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_else7
+	la	$a0	boolean_lit0
+	jal	Any.clone
+	j	_endif7
+_else7:
+	la	$a0	boolean_lit1
+	jal	Any.clone
+_endif7:
+_endif6:
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_else5
+	move	$a0	$s3
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	sub	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+	move	$s2	$a0
+	lw	$a0	8($sp)
+	move	$s3	$a0
+_while5:
+	move	$a0	$s3
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	move	$a0	$s2
+	lw	$a1	4($sp)		
+	sw	$ra	4($sp)		
+	jal	lt_helper
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_endwhile5
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	16($sp)
+	addiu	$sp	$sp	-12	
+	sw	$a0	4($sp)
+	move	$a0	$s3
+	sw	$a0	12($sp)
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	32($sp)
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	move	$a0	$s3
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	add	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	525
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	24($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	525
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	28($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	move	$a0	$s3
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	add	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+
+	move	$s3	$a0
+	move	$a0	$zero
+	j	_while5
+
+_endwhile5:
+	move	$a0	$zero
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	16($sp)
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	move	$a0	$s2
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	528
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	j	_endif5
+_else5:
+	addiu	$sp	$sp	-8
+	sw	$s0	4($sp)		
+	la	$a0	string_const3
+	jal	Any.clone
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	4($t1)
+	jalr	$t1
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	529
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	16($t1)
+	jalr	$t1
+_endif5:
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	12
+	jr	$ra
+Algo.replace:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	la	$a0	int_const0
+	jal	Any.clone
+	move	$s3	$a0
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	20($sp)
+
+	li	$t1	556
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	16($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	move	$s2	$a0
+_while6:
+	move	$a0	$s3
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	move	$a0	$s2
+	lw	$a1	4($sp)		
+	sw	$ra	4($sp)		
+	jal	lt_helper
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_endwhile6
+_match2:
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	20($sp)
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	move	$a0	$s3
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	558
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	24($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	beq	$a0	$zero	_match2_caseNull
+	addiu	$sp	$sp	-4
+	sw	$a0	4($sp)
+	lw	$t0	0($a0)
+	j	_match2_caseAny
+_match2_abort:
+	li	$t1	558
+	la	$a1	string_const2
+	j	_case_abort
+_match2_caseNull:
+_match3:
+	lw	$a0	12($sp)
+	beq	$a0	$zero	_match3_caseNull
+	addiu	$sp	$sp	-4
+	sw	$a0	4($sp)
+	lw	$t0	0($a0)
+	j	_match3_caseAny
+_match3_abort:
+	li	$t1	558
+	la	$a1	string_const2
+	j	_case_abort
+_match3_caseNull:
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	20($sp)
+	addiu	$sp	$sp	-12	
+	sw	$a0	4($sp)
+	move	$a0	$s3
+	sw	$a0	12($sp)
+	lw	$a0	24($sp)
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	558
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	28($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	move	$a0	$s2
+
+	move	$s3	$a0
+	move	$a0	$zero
+	j	_endmatchnull3
+_match3_caseAny:
+	move	$a0	$s3
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	add	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+
+	move	$s3	$a0
+	move	$a0	$zero
+	j	_endmatch3
+_endmatch3:
+	addiu	$sp	$sp	4
+_endmatchnull3:
+	j	_endmatchnull2
+_match2_caseAny:
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	8($sp)
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	lw	$a0	28($sp)
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	561
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	8($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_else8
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	24($sp)
+	addiu	$sp	$sp	-12	
+	sw	$a0	4($sp)
+	move	$a0	$s3
+	sw	$a0	12($sp)
+	lw	$a0	28($sp)
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	562
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	28($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	move	$a0	$s2
+
+	move	$s3	$a0
+	move	$a0	$zero
+	j	_endif8
+_else8:
+	move	$a0	$s3
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	add	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+
+	move	$s3	$a0
+	move	$a0	$zero
+_endif8:
+	j	_endmatch2
+_endmatch2:
+	addiu	$sp	$sp	4
+_endmatchnull2:
+	j	_while6
+
+_endwhile6:
+	move	$a0	$zero
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	16
+	jr	$ra
+Algo.lastIndexOf:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	16($sp)
+
+	li	$t1	586
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	16($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	sub	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+	move	$s3	$a0
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$t0	12($a0)
+	sub	$t0	$zero	$t0
+	sw	$t0	12($a0)
+	move	$s2	$a0
+_while7:
+	la	$a0	int_const0
+	jal	Any.clone
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	move	$a0	$s3
+	lw	$a1	4($sp)		
+	sw	$ra	4($sp)		
+	jal	lteq_helper
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_endwhile7
+_match4:
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	16($sp)
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	move	$a0	$s3
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	589
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	24($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	beq	$a0	$zero	_match4_caseNull
+	addiu	$sp	$sp	-4
+	sw	$a0	4($sp)
+	lw	$t0	0($a0)
+	j	_match4_caseAny
+_match4_abort:
+	li	$t1	589
+	la	$a1	string_const2
+	j	_case_abort
+_match4_caseNull:
+_match5:
+	lw	$a0	8($sp)
+	beq	$a0	$zero	_match5_caseNull
+	addiu	$sp	$sp	-4
+	sw	$a0	4($sp)
+	lw	$t0	0($a0)
+	j	_match5_caseAny
+_match5_abort:
+	li	$t1	589
+	la	$a1	string_const2
+	j	_case_abort
+_match5_caseNull:
+	move	$a0	$s3
+
+	move	$s2	$a0
+	move	$a0	$zero
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$t0	12($a0)
+	sub	$t0	$zero	$t0
+	sw	$t0	12($a0)
+
+	move	$s3	$a0
+	move	$a0	$zero
+	j	_endmatchnull5
+_match5_caseAny:
+	move	$a0	$s3
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	sub	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+
+	move	$s3	$a0
+	move	$a0	$zero
+	j	_endmatch5
+_endmatch5:
+	addiu	$sp	$sp	4
+_endmatchnull5:
+	j	_endmatchnull4
+_match4_caseAny:
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	8($sp)
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	lw	$a0	24($sp)
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	592
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	8($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_else9
+	move	$a0	$s3
+
+	move	$s2	$a0
+	move	$a0	$zero
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$t0	12($a0)
+	sub	$t0	$zero	$t0
+	sw	$t0	12($a0)
+
+	move	$s3	$a0
+	move	$a0	$zero
+	j	_endif9
+_else9:
+	move	$a0	$s3
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	sub	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+
+	move	$s3	$a0
+	move	$a0	$zero
+_endif9:
+	j	_endmatch4
+_endmatch4:
+	addiu	$sp	$sp	4
+_endmatchnull4:
+	j	_while7
+
+_endwhile7:
+	move	$a0	$zero
+	move	$a0	$s2
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	12
+	jr	$ra
+Algo.indexOf:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	la	$a0	int_const0
+	jal	Any.clone
+	move	$s3	$a0
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$t0	12($a0)
+	sub	$t0	$zero	$t0
+	sw	$t0	12($a0)
+	move	$s2	$a0
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	16($sp)
+
+	li	$t1	605
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	16($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	move	$s4	$a0
+_while8:
+	move	$a0	$s3
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	move	$a0	$s4
+	lw	$a1	4($sp)		
+	sw	$ra	4($sp)		
+	jal	lt_helper
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_endwhile8
+_match6:
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	16($sp)
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	move	$a0	$s3
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	607
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	24($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	beq	$a0	$zero	_match6_caseNull
+	addiu	$sp	$sp	-4
+	sw	$a0	4($sp)
+	lw	$t0	0($a0)
+	j	_match6_caseAny
+_match6_abort:
+	li	$t1	607
+	la	$a1	string_const2
+	j	_case_abort
+_match6_caseNull:
+_match7:
+	lw	$a0	8($sp)
+	beq	$a0	$zero	_match7_caseNull
+	addiu	$sp	$sp	-4
+	sw	$a0	4($sp)
+	lw	$t0	0($a0)
+	j	_match7_caseAny
+_match7_abort:
+	li	$t1	607
+	la	$a1	string_const2
+	j	_case_abort
+_match7_caseNull:
+	move	$a0	$s3
+
+	move	$s2	$a0
+	move	$a0	$zero
+	move	$a0	$s4
+
+	move	$s3	$a0
+	move	$a0	$zero
+	j	_endmatchnull7
+_match7_caseAny:
+	move	$a0	$s3
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	add	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+
+	move	$s3	$a0
+	move	$a0	$zero
+	j	_endmatch7
+_endmatch7:
+	addiu	$sp	$sp	4
+_endmatchnull7:
+	j	_endmatchnull6
+_match6_caseAny:
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	8($sp)
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	lw	$a0	24($sp)
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	610
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	8($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_else10
+	move	$a0	$s3
+
+	move	$s2	$a0
+	move	$a0	$zero
+	move	$a0	$s4
+
+	move	$s3	$a0
+	move	$a0	$zero
+	j	_endif10
+_else10:
+	move	$a0	$s3
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	add	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+
+	move	$s3	$a0
+	move	$a0	$zero
+_endif10:
+	j	_endmatch6
+_endmatch6:
+	addiu	$sp	$sp	4
+_endmatchnull6:
+	j	_while8
+
+_endwhile8:
+	move	$a0	$zero
+	move	$a0	$s2
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	12
+	jr	$ra
+IntList.IntList:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s0
+
+	li	$t1	286
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	0($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	sw	$s0	4($sp)		
+	la	$a0	Algo_protObj
+	jal	Any.clone
+	move	$s0	$a0
+	lw	$t1	8($s0)
+	lw	$t1	44($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	sw	$a0	16($s0)
+	addiu	$a1	$s0	16
+	jal	_GenGC_Assign
+	move	$a0	$zero
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	addiu	$sp	$sp	-4	
+	la	$a0	int_const0
+	jal	Any.clone
+	sw	$a0	4($sp)
+	la	$a0	ArrayAny_protObj
+	jal	Any.clone
+	move	$s0	$a0
+	lw	$t1	8($s0)
+	lw	$t1	12($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	sw	$a0	12($s0)
+	addiu	$a1	$s0	12
+	jal	_GenGC_Assign
+	move	$a0	$zero
+	move	$a0	$s0
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	jr	$ra
+IntList.length:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	12($s0)
+
+	li	$t1	292
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	16($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	jr	$ra
+IntList.get:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+_match8:
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	12($s0)
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	lw	$a0	20($sp)
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	298
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	24($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	beq	$a0	$zero	_match8_caseNull
+	addiu	$sp	$sp	-4
+	sw	$a0	4($sp)
+	lw	$t0	0($a0)
+
+	beq	$t0	12	_match8_caseInt
+_match8_abort:
+	li	$t1	298
+	la	$a1	string_const2
+	j	_case_abort
+_match8_caseInt:
+	lw	$a0	4($sp)
+	j	_endmatch8
+_match8_caseNull:
+	j	_match8_abort
+_endmatch8:
+	addiu	$sp	$sp	4
+_endmatchnull8:
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	8
+	jr	$ra
+IntList.set:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	12($s0)
+	addiu	$sp	$sp	-12	
+	sw	$a0	4($sp)
+	lw	$a0	28($sp)
+	sw	$a0	12($sp)
+	lw	$a0	24($sp)
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	300
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	28($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	12
+	jr	$ra
+IntList.add:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	12($s0)
+
+	li	$t1	303
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	16($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	move	$s2	$a0
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	12($s0)
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	move	$a0	$s2
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	add	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	304
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	sw	$a0	12($s0)
+	addiu	$a1	$s0	12
+	jal	_GenGC_Assign
+	move	$a0	$zero
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	12($s0)
+	addiu	$sp	$sp	-12	
+	sw	$a0	4($sp)
+	move	$a0	$s2
+	sw	$a0	12($sp)
+	lw	$a0	24($sp)
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	305
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	28($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	8
+	jr	$ra
+IntList.replace:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	16($s0)
+	addiu	$sp	$sp	-16	
+	sw	$a0	4($sp)
+	lw	$a0	12($s0)
+	sw	$a0	16($sp)
+	lw	$a0	32($sp)
+	sw	$a0	12($sp)
+	lw	$a0	28($sp)
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	308
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	88($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	12
+	jr	$ra
+IntList.removeFirst:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	addiu	$sp	$sp	-4	
+	la	$a0	int_const0
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	28($t1)
+	jalr	$t1
+	move	$s4	$a0
+	addiu	$sp	$sp	-4	
+	la	$a0	int_const0
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	56($t1)
+	jalr	$t1
+	move	$a0	$s4
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	jr	$ra
+IntList.removeAt:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	16($s0)
+	addiu	$sp	$sp	-12	
+	sw	$a0	4($sp)
+	lw	$a0	12($s0)
+	sw	$a0	12($sp)
+	lw	$a0	24($sp)
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	316
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	80($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	sw	$a0	12($s0)
+	addiu	$a1	$s0	12
+	jal	_GenGC_Assign
+	move	$a0	$zero
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	8
+	jr	$ra
+IntList.removeAll:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	16($s0)
+	addiu	$sp	$sp	-12	
+	sw	$a0	4($sp)
+	lw	$a0	12($s0)
+	sw	$a0	12($sp)
+	lw	$a0	24($sp)
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	318
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	76($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	sw	$a0	12($s0)
+	addiu	$a1	$s0	12
+	jal	_GenGC_Assign
+	move	$a0	$zero
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	8
+	jr	$ra
+IntList.lastIndexOf:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	16($s0)
+	addiu	$sp	$sp	-12	
+	sw	$a0	4($sp)
+	lw	$a0	12($s0)
+	sw	$a0	12($sp)
+	lw	$a0	24($sp)
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	320
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	96($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	8
+	jr	$ra
+IntList.indexOf:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	16($s0)
+	addiu	$sp	$sp	-12	
+	sw	$a0	4($sp)
+	lw	$a0	12($s0)
+	sw	$a0	12($sp)
+	lw	$a0	24($sp)
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	322
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	96($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	8
+	jr	$ra
+IntList.sort:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	16($s0)
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	330
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	48($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	jr	$ra
+IntList.sortD:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	16($s0)
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	332
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	52($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	jr	$ra
+IntList.toString:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	12($s0)
+
+	li	$t1	335
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	16($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	move	$s2	$a0
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s2
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	int_const0
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	336
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	8($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_else11
+	la	$a0	string_const5
+	jal	Any.clone
+	j	_endif11
+_else11:
+	la	$a0	int_const0
+	jal	Any.clone
+	move	$s3	$a0
+	la	$a0	string_const6
+	jal	Any.clone
+	move	$s4	$a0
+_while9:
+	move	$a0	$s3
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	move	$a0	$s2
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	sub	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+	lw	$a1	4($sp)		
+	sw	$ra	4($sp)		
+	jal	lt_helper
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_endwhile9
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s4
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	12($s0)
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	move	$a0	$s3
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	341
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	24($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	341
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	4($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	341
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	-4
+	sw	$a0	4($sp)
+	la	$a0	string_const7
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	341
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	move	$s4	$a0
+	move	$a0	$zero
+	move	$a0	$s3
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	add	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+
+	move	$s3	$a0
+	move	$a0	$zero
+	j	_while9
+
+_endwhile9:
+	move	$a0	$zero
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s4
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	12($s0)
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	move	$a0	$s3
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	344
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	24($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	344
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	4($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	344
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	-4
+	sw	$a0	4($sp)
+	la	$a0	string_const8
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	344
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+_endif11:
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	jr	$ra
+LinkedList.LinkedList:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s0
+
+	li	$t1	3
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	12($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	move	$a0	$zero
+
+	sw	$a0	12($s0)
+	addiu	$a1	$s0	12
+	jal	_GenGC_Assign
+	move	$a0	$zero
+	move	$a0	$s0
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	jr	$ra
+LinkedList.add:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	addiu	$sp	$sp	-4	
+	lw	$a0	16($sp)
+	sw	$a0	4($sp)
+	la	$a0	LinkedListNode_protObj
+	jal	Any.clone
+	move	$s0	$a0
+	lw	$t1	8($s0)
+	lw	$t1	12($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	move	$s2	$a0
+_match9:
+	lw	$a0	12($s0)
+	beq	$a0	$zero	_match9_caseNull
+	addiu	$sp	$sp	-4
+	sw	$a0	4($sp)
+	lw	$t0	0($a0)
+
+	beq	$t0	3	_match9_caseLinkedListNode
+_match9_abort:
+	li	$t1	11
+	la	$a1	string_const2
+	j	_case_abort
+_match9_caseNull:
+	move	$a0	$s2
+
+	sw	$a0	12($s0)
+	addiu	$a1	$s0	12
+	jal	_GenGC_Assign
+	move	$a0	$zero
+	j	_endmatchnull9
+_match9_caseLinkedListNode:
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	8($sp)
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	move	$a0	$s2
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	13
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	28($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	j	_endmatch9
+_endmatch9:
+	addiu	$sp	$sp	4
+_endmatchnull9:
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	8
+	jr	$ra
+LinkedList.removeFirst:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+_match10:
+	lw	$a0	12($s0)
+	beq	$a0	$zero	_match10_caseNull
+	addiu	$sp	$sp	-4
+	sw	$a0	4($sp)
+	lw	$t0	0($a0)
+
+	beq	$t0	3	_match10_caseLinkedListNode
+_match10_abort:
+	li	$t1	22
+	la	$a1	string_const2
+	j	_case_abort
+_match10_caseNull:
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const10
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	16($t1)
+	jalr	$t1
+	j	_endmatchnull10
+_match10_caseLinkedListNode:
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	12($s0)
+
+	li	$t1	23
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	move	$s2	$a0
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	12($s0)
+
+	li	$t1	23
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	24($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	sw	$a0	12($s0)
+	addiu	$a1	$s0	12
+	jal	_GenGC_Assign
+	move	$a0	$zero
+	move	$a0	$s2
+	j	_endmatch10
+_endmatch10:
+	addiu	$sp	$sp	4
+_endmatchnull10:
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	jr	$ra
+LinkedList.replace:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	lw	$a0	12($s0)
+	move	$s2	$a0
+_while10:
+_match11:
+	move	$a0	$s2
+	beq	$a0	$zero	_match11_caseNull
+	addiu	$sp	$sp	-4
+	sw	$a0	4($sp)
+	lw	$t0	0($a0)
+
+	beq	$t0	3	_match11_caseLinkedListNode
+_match11_abort:
+	li	$t1	29
+	la	$a1	string_const2
+	j	_case_abort
+_match11_caseNull:
+	la	$a0	boolean_lit0
+	jal	Any.clone
+	j	_endmatchnull11
+_match11_caseLinkedListNode:
+	la	$a0	boolean_lit1
+	jal	Any.clone
+	j	_endmatch11
+_endmatch11:
+	addiu	$sp	$sp	4
+_endmatchnull11:
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_endwhile10
+_match12:
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s2
+
+	li	$t1	31
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	beq	$a0	$zero	_match12_caseNull
+	addiu	$sp	$sp	-4
+	sw	$a0	4($sp)
+	lw	$t0	0($a0)
+	j	_match12_caseAny
+_match12_abort:
+	li	$t1	31
+	la	$a1	string_const2
+	j	_case_abort
+_match12_caseNull:
+_match13:
+	lw	$a0	12($sp)
+	beq	$a0	$zero	_match13_caseNull
+	addiu	$sp	$sp	-4
+	sw	$a0	4($sp)
+	lw	$t0	0($a0)
+	j	_match13_caseAny
+_match13_abort:
+	li	$t1	31
+	la	$a1	string_const2
+	j	_case_abort
+_match13_caseNull:
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s2
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	lw	$a0	20($sp)
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	31
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	16($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	move	$a0	$zero
+
+	move	$s2	$a0
+	move	$a0	$zero
+	j	_endmatchnull13
+_match13_caseAny:
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s2
+
+	li	$t1	32
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	24($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	move	$s2	$a0
+	move	$a0	$zero
+	j	_endmatch13
+_endmatch13:
+	addiu	$sp	$sp	4
+_endmatchnull13:
+	j	_endmatchnull12
+_match12_caseAny:
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	8($sp)
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	lw	$a0	28($sp)
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	33
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	8($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_else12
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s2
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	lw	$a0	24($sp)
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	33
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	16($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	move	$a0	$zero
+
+	move	$s2	$a0
+	move	$a0	$zero
+	j	_endif12
+_else12:
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s2
+
+	li	$t1	33
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	24($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	move	$s2	$a0
+	move	$a0	$zero
+_endif12:
+	j	_endmatch12
+_endmatch12:
+	addiu	$sp	$sp	4
+_endmatchnull12:
+	j	_while10
+
+_endwhile10:
+	move	$a0	$zero
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	12
+	jr	$ra
+LinkedList.removeAll:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	lw	$a0	12($s0)
+	move	$s3	$a0
+	move	$a0	$zero
+	move	$s2	$a0
+_match14:
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s3
+
+	li	$t1	58
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	beq	$a0	$zero	_match14_caseNull
+	addiu	$sp	$sp	-4
+	sw	$a0	4($sp)
+	lw	$t0	0($a0)
+	j	_match14_caseAny
+_match14_abort:
+	li	$t1	58
+	la	$a1	string_const2
+	j	_case_abort
+_match14_caseNull:
+_match15:
+	lw	$a0	8($sp)
+	beq	$a0	$zero	_match15_caseNull
+	addiu	$sp	$sp	-4
+	sw	$a0	4($sp)
+	lw	$t0	0($a0)
+	j	_match15_caseAny
+_match15_abort:
+	li	$t1	58
+	la	$a1	string_const2
+	j	_case_abort
+_match15_caseNull:
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s3
+
+	li	$t1	58
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	24($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	sw	$a0	12($s0)
+	addiu	$a1	$s0	12
+	jal	_GenGC_Assign
+	move	$a0	$zero
+	j	_endmatchnull15
+_match15_caseAny:
+	j	_endmatch15
+_endmatch15:
+	addiu	$sp	$sp	4
+_endmatchnull15:
+	j	_endmatchnull14
+_match14_caseAny:
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	8($sp)
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	lw	$a0	24($sp)
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	60
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	8($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_else13
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s3
+
+	li	$t1	60
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	24($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	sw	$a0	12($s0)
+	addiu	$a1	$s0	12
+	jal	_GenGC_Assign
+	move	$a0	$zero
+	j	_endif13
+_else13:
+_endif13:
+	j	_endmatch14
+_endmatch14:
+	addiu	$sp	$sp	4
+_endmatchnull14:
+	move	$a0	$s3
+
+	move	$s2	$a0
+	move	$a0	$zero
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s3
+
+	li	$t1	62
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	24($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	move	$s3	$a0
+	move	$a0	$zero
+_while11:
+_match16:
+	move	$a0	$s3
+	beq	$a0	$zero	_match16_caseNull
+	addiu	$sp	$sp	-4
+	sw	$a0	4($sp)
+	lw	$t0	0($a0)
+
+	beq	$t0	3	_match16_caseLinkedListNode
+_match16_abort:
+	li	$t1	64
+	la	$a1	string_const2
+	j	_case_abort
+_match16_caseNull:
+	la	$a0	boolean_lit0
+	jal	Any.clone
+	j	_endmatchnull16
+_match16_caseLinkedListNode:
+	la	$a0	boolean_lit1
+	jal	Any.clone
+	j	_endmatch16
+_endmatch16:
+	addiu	$sp	$sp	4
+_endmatchnull16:
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_endwhile11
+_match17:
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s3
+
+	li	$t1	66
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	beq	$a0	$zero	_match17_caseNull
+	addiu	$sp	$sp	-4
+	sw	$a0	4($sp)
+	lw	$t0	0($a0)
+	j	_match17_caseAny
+_match17_abort:
+	li	$t1	66
+	la	$a1	string_const2
+	j	_case_abort
+_match17_caseNull:
+_match18:
+	lw	$a0	8($sp)
+	beq	$a0	$zero	_match18_caseNull
+	addiu	$sp	$sp	-4
+	sw	$a0	4($sp)
+	lw	$t0	0($a0)
+	j	_match18_caseAny
+_match18_abort:
+	li	$t1	66
+	la	$a1	string_const2
+	j	_case_abort
+_match18_caseNull:
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s2
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s3
+
+	li	$t1	66
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	24($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	66
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	32($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	j	_endmatchnull18
+_match18_caseAny:
+	j	_endmatch18
+_endmatch18:
+	addiu	$sp	$sp	4
+_endmatchnull18:
+	j	_endmatchnull17
+_match17_caseAny:
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	8($sp)
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	lw	$a0	24($sp)
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	68
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	8($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_else14
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s2
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s3
+
+	li	$t1	68
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	24($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	68
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	32($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	j	_endif14
+_else14:
+_endif14:
+	j	_endmatch17
+_endmatch17:
+	addiu	$sp	$sp	4
+_endmatchnull17:
+	move	$a0	$s3
+
+	move	$s2	$a0
+	move	$a0	$zero
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s3
+
+	li	$t1	71
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	24($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	move	$s3	$a0
+	move	$a0	$zero
+	j	_while11
+
+_endwhile11:
+	move	$a0	$zero
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	8
+	jr	$ra
+LinkedList.removeAt:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	lw	$a0	8($sp)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const0
+	jal	Any.clone
+	lw	$a1	4($sp)		
+	sw	$ra	4($sp)		
+	jal	lt_helper
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_else15
+	addiu	$sp	$sp	-8
+	sw	$s0	4($sp)		
+	la	$a0	string_const11
+	jal	Any.clone
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	28($sp)
+
+	li	$t1	101
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	4($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	101
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	16($t1)
+	jalr	$t1
+	j	_endif15
+_else15:
+	move	$a0	$zero
+	move	$s3	$a0
+	lw	$a0	12($s0)
+	move	$s4	$a0
+	move	$a0	$zero
+	move	$s5	$a0
+	la	$a0	int_const0
+	jal	Any.clone
+	move	$s2	$a0
+_while12:
+	move	$a0	$s2
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	lw	$a0	12($sp)
+	lw	$a1	4($sp)		
+	sw	$ra	4($sp)		
+	jal	lteq_helper
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_endwhile12
+_match19:
+	move	$a0	$s4
+	beq	$a0	$zero	_match19_caseNull
+	addiu	$sp	$sp	-4
+	sw	$a0	4($sp)
+	lw	$t0	0($a0)
+
+	beq	$t0	3	_match19_caseLinkedListNode
+_match19_abort:
+	li	$t1	107
+	la	$a1	string_const2
+	j	_case_abort
+_match19_caseNull:
+	addiu	$sp	$sp	-8
+	sw	$s0	4($sp)		
+	la	$a0	string_const11
+	jal	Any.clone
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	28($sp)
+
+	li	$t1	108
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	4($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	108
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	16($t1)
+	jalr	$t1
+	j	_endmatchnull19
+_match19_caseLinkedListNode:
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s2
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	lw	$a0	24($sp)
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	110
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	8($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_else16
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	8($sp)
+
+	li	$t1	111
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	move	$s3	$a0
+	move	$a0	$zero
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	16($sp)
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	int_const0
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	112
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	8($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_else17
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s4
+
+	li	$t1	112
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	24($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	sw	$a0	12($s0)
+	addiu	$a1	$s0	12
+	jal	_GenGC_Assign
+	move	$a0	$zero
+	j	_endif17
+_else17:
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s5
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s4
+
+	li	$t1	112
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	24($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	112
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	32($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+_endif17:
+	j	_endif16
+_else16:
+	move	$a0	$s4
+
+	move	$s5	$a0
+	move	$a0	$zero
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s4
+
+	li	$t1	113
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	24($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	move	$s4	$a0
+	move	$a0	$zero
+_endif16:
+	move	$a0	$s2
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	add	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+
+	move	$s2	$a0
+	move	$a0	$zero
+	j	_endmatch19
+_endmatch19:
+	addiu	$sp	$sp	4
+_endmatchnull19:
+	j	_while12
+
+_endwhile12:
+	move	$a0	$zero
+	move	$a0	$s3
+_endif15:
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	8
+	jr	$ra
+LinkedList.length:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	lw	$a0	12($s0)
+	move	$s3	$a0
+	la	$a0	int_const0
+	jal	Any.clone
+	move	$s2	$a0
+_while13:
+_match20:
+	move	$a0	$s3
+	beq	$a0	$zero	_match20_caseNull
+	addiu	$sp	$sp	-4
+	sw	$a0	4($sp)
+	lw	$t0	0($a0)
+
+	beq	$t0	3	_match20_caseLinkedListNode
+_match20_abort:
+	li	$t1	150
+	la	$a1	string_const2
+	j	_case_abort
+_match20_caseNull:
+	la	$a0	boolean_lit0
+	jal	Any.clone
+	j	_endmatchnull20
+_match20_caseLinkedListNode:
+	la	$a0	boolean_lit1
+	jal	Any.clone
+	j	_endmatch20
+_endmatch20:
+	addiu	$sp	$sp	4
+_endmatchnull20:
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_endwhile13
+	move	$a0	$s2
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	add	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+
+	move	$s2	$a0
+	move	$a0	$zero
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s3
+
+	li	$t1	152
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	24($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	move	$s3	$a0
+	move	$a0	$zero
+	j	_while13
+
+_endwhile13:
+	move	$a0	$zero
+	move	$a0	$s2
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	jr	$ra
+LinkedList.indexOf:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$t0	12($a0)
+	sub	$t0	$zero	$t0
+	sw	$t0	12($a0)
+	move	$s4	$a0
+	lw	$a0	12($s0)
+	move	$s3	$a0
+	la	$a0	int_const0
+	jal	Any.clone
+	move	$s2	$a0
+_while14:
+_match21:
+	move	$a0	$s3
+	beq	$a0	$zero	_match21_caseNull
+	addiu	$sp	$sp	-4
+	sw	$a0	4($sp)
+	lw	$t0	0($a0)
+
+	beq	$t0	3	_match21_caseLinkedListNode
+_match21_abort:
+	li	$t1	161
+	la	$a1	string_const2
+	j	_case_abort
+_match21_caseNull:
+	la	$a0	boolean_lit0
+	jal	Any.clone
+	j	_endmatchnull21
+_match21_caseLinkedListNode:
+	la	$a0	boolean_lit1
+	jal	Any.clone
+	j	_endmatch21
+_endmatch21:
+	addiu	$sp	$sp	4
+_endmatchnull21:
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_endwhile14
+_match22:
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s3
+
+	li	$t1	162
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	beq	$a0	$zero	_match22_caseNull
+	addiu	$sp	$sp	-4
+	sw	$a0	4($sp)
+	lw	$t0	0($a0)
+	j	_match22_caseAny
+_match22_abort:
+	li	$t1	162
+	la	$a1	string_const2
+	j	_case_abort
+_match22_caseNull:
+_match23:
+	lw	$a0	8($sp)
+	beq	$a0	$zero	_match23_caseNull
+	addiu	$sp	$sp	-4
+	sw	$a0	4($sp)
+	lw	$t0	0($a0)
+	j	_match23_caseAny
+_match23_abort:
+	li	$t1	163
+	la	$a1	string_const2
+	j	_case_abort
+_match23_caseNull:
+	move	$a0	$s2
+
+	move	$s4	$a0
+	move	$a0	$zero
+	move	$a0	$zero
+
+	move	$s3	$a0
+	move	$a0	$zero
+	j	_endmatchnull23
+_match23_caseAny:
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s3
+
+	li	$t1	165
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	24($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	move	$s3	$a0
+	move	$a0	$zero
+	j	_endmatch23
+_endmatch23:
+	addiu	$sp	$sp	4
+_endmatchnull23:
+	j	_endmatchnull22
+_match22_caseAny:
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	8($sp)
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	lw	$a0	24($sp)
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	167
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	8($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_else18
+	move	$a0	$s2
+
+	move	$s4	$a0
+	move	$a0	$zero
+	move	$a0	$zero
+
+	move	$s3	$a0
+	move	$a0	$zero
+	j	_endif18
+_else18:
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s3
+
+	li	$t1	167
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	24($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	move	$s3	$a0
+	move	$a0	$zero
+_endif18:
+	j	_endmatch22
+_endmatch22:
+	addiu	$sp	$sp	4
+_endmatchnull22:
+	move	$a0	$s2
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	add	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+
+	move	$s2	$a0
+	move	$a0	$zero
+	j	_while14
+
+_endwhile14:
+	move	$a0	$zero
+	move	$a0	$s4
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	8
+	jr	$ra
+LinkedList.lastIndexOf:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$t0	12($a0)
+	sub	$t0	$zero	$t0
+	sw	$t0	12($a0)
+	move	$s2	$a0
+	lw	$a0	12($s0)
+	move	$s4	$a0
+	la	$a0	int_const0
+	jal	Any.clone
+	move	$s3	$a0
+_while15:
+_match24:
+	move	$a0	$s4
+	beq	$a0	$zero	_match24_caseNull
+	addiu	$sp	$sp	-4
+	sw	$a0	4($sp)
+	lw	$t0	0($a0)
+
+	beq	$t0	3	_match24_caseLinkedListNode
+_match24_abort:
+	li	$t1	178
+	la	$a1	string_const2
+	j	_case_abort
+_match24_caseNull:
+	la	$a0	boolean_lit0
+	jal	Any.clone
+	j	_endmatchnull24
+_match24_caseLinkedListNode:
+	la	$a0	boolean_lit1
+	jal	Any.clone
+	j	_endmatch24
+_endmatch24:
+	addiu	$sp	$sp	4
+_endmatchnull24:
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_endwhile15
+_match25:
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s4
+
+	li	$t1	179
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	beq	$a0	$zero	_match25_caseNull
+	addiu	$sp	$sp	-4
+	sw	$a0	4($sp)
+	lw	$t0	0($a0)
+	j	_match25_caseAny
+_match25_abort:
+	li	$t1	179
+	la	$a1	string_const2
+	j	_case_abort
+_match25_caseNull:
+_match26:
+	lw	$a0	8($sp)
+	beq	$a0	$zero	_match26_caseNull
+	addiu	$sp	$sp	-4
+	sw	$a0	4($sp)
+	lw	$t0	0($a0)
+	j	_match26_caseAny
+_match26_abort:
+	li	$t1	180
+	la	$a1	string_const2
+	j	_case_abort
+_match26_caseNull:
+	move	$a0	$s3
+
+	move	$s2	$a0
+	move	$a0	$zero
+	j	_endmatchnull26
+_match26_caseAny:
+	j	_endmatch26
+_endmatch26:
+	addiu	$sp	$sp	4
+_endmatchnull26:
+	j	_endmatchnull25
+_match25_caseAny:
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	8($sp)
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	lw	$a0	24($sp)
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	181
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	8($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_else19
+	move	$a0	$s3
+
+	move	$s2	$a0
+	move	$a0	$zero
+	j	_endif19
+_else19:
+_endif19:
+	j	_endmatch25
+_endmatch25:
+	addiu	$sp	$sp	4
+_endmatchnull25:
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s4
+
+	li	$t1	183
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	24($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	move	$s4	$a0
+	move	$a0	$zero
+	move	$a0	$s3
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	add	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+
+	move	$s3	$a0
+	move	$a0	$zero
+	j	_while15
+
+_endwhile15:
+	move	$a0	$zero
+	move	$a0	$s2
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	8
+	jr	$ra
+LinkedList.toString:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	lw	$a0	12($s0)
+	move	$s3	$a0
+	la	$a0	string_const6
+	jal	Any.clone
+	move	$s2	$a0
+_while16:
+_match27:
+	move	$a0	$s3
+	beq	$a0	$zero	_match27_caseNull
+	addiu	$sp	$sp	-4
+	sw	$a0	4($sp)
+	lw	$t0	0($a0)
+
+	beq	$t0	3	_match27_caseLinkedListNode
+_match27_abort:
+	li	$t1	193
+	la	$a1	string_const2
+	j	_case_abort
+_match27_caseNull:
+	la	$a0	boolean_lit0
+	jal	Any.clone
+	j	_endmatchnull27
+_match27_caseLinkedListNode:
+	la	$a0	boolean_lit1
+	jal	Any.clone
+	j	_endmatch27
+_endmatch27:
+	addiu	$sp	$sp	4
+_endmatchnull27:
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_endwhile16
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s2
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s3
+
+	li	$t1	194
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	4($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	194
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	-4
+	sw	$a0	4($sp)
+_match28:
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s3
+
+	li	$t1	194
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	24($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	beq	$a0	$zero	_match28_caseNull
+	addiu	$sp	$sp	-4
+	sw	$a0	4($sp)
+	lw	$t0	0($a0)
+
+	beq	$t0	3	_match28_caseLinkedListNode
+_match28_abort:
+	li	$t1	194
+	la	$a1	string_const2
+	j	_case_abort
+_match28_caseNull:
+	la	$a0	string_const8
+	jal	Any.clone
+	j	_endmatchnull28
+_match28_caseLinkedListNode:
+	la	$a0	string_const7
+	jal	Any.clone
+	j	_endmatch28
+_endmatch28:
+	addiu	$sp	$sp	4
+_endmatchnull28:
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	194
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	move	$s2	$a0
+	move	$a0	$zero
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s3
+
+	li	$t1	195
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	24($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	move	$s3	$a0
+	move	$a0	$zero
+	j	_while16
+
+_endwhile16:
+	move	$a0	$zero
+	move	$a0	$s2
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	jr	$ra
+LinkedListNode.LinkedListNode:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s0
+
+	li	$t1	205
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	0($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	lw	$a0	8($sp)
+
+	sw	$a0	16($s0)
+	addiu	$a1	$s0	16
+	jal	_GenGC_Assign
+	move	$a0	$zero
+	move	$a0	$zero
+
+	sw	$a0	12($s0)
+	addiu	$a1	$s0	12
+	jal	_GenGC_Assign
+	move	$a0	$zero
+	move	$a0	$s0
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	8
+	jr	$ra
+LinkedListNode.set:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	lw	$a0	8($sp)
+
+	sw	$a0	16($s0)
+	addiu	$a1	$s0	16
+	jal	_GenGC_Assign
+	move	$a0	$zero
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	8
+	jr	$ra
+LinkedListNode.get:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	lw	$a0	16($s0)
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	jr	$ra
+LinkedListNode.next:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	lw	$a0	12($s0)
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	jr	$ra
+LinkedListNode.add:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+_match29:
+	lw	$a0	12($s0)
+	beq	$a0	$zero	_match29_caseNull
+	addiu	$sp	$sp	-4
+	sw	$a0	4($sp)
+	lw	$t0	0($a0)
+
+	beq	$t0	3	_match29_caseLinkedListNode
+_match29_abort:
+	li	$t1	215
+	la	$a1	string_const2
+	j	_case_abort
+_match29_caseNull:
+	lw	$a0	8($sp)
+
+	sw	$a0	12($s0)
+	addiu	$a1	$s0	12
+	jal	_GenGC_Assign
+	move	$a0	$zero
+	j	_endmatchnull29
+_match29_caseLinkedListNode:
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	8($sp)
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	lw	$a0	24($sp)
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	217
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	28($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	j	_endmatch29
+_endmatch29:
+	addiu	$sp	$sp	4
+_endmatchnull29:
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	8
+	jr	$ra
+LinkedListNode.setNext:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	lw	$a0	8($sp)
+
+	sw	$a0	12($s0)
+	addiu	$a1	$s0	12
+	jal	_GenGC_Assign
+	move	$a0	$zero
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	8
+	jr	$ra
+LinkedListNode.toString:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+_match30:
+	lw	$a0	16($s0)
+	beq	$a0	$zero	_match30_caseNull
+	addiu	$sp	$sp	-4
+	sw	$a0	4($sp)
+	lw	$t0	0($a0)
+	j	_match30_caseAny
+_match30_abort:
+	li	$t1	221
+	la	$a1	string_const2
+	j	_case_abort
+_match30_caseNull:
+	la	$a0	string_const13
+	jal	Any.clone
+	j	_endmatchnull30
+_match30_caseAny:
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	8($sp)
+
+	li	$t1	221
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	4($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	j	_endmatch30
+_endmatch30:
+	addiu	$sp	$sp	4
+_endmatchnull30:
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	jr	$ra
+List.List:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s0
+
+	li	$t1	226
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	12($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	sw	$s0	4($sp)		
+	la	$a0	Algo_protObj
+	jal	Any.clone
+	move	$s0	$a0
+	lw	$t1	8($s0)
+	lw	$t1	44($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	sw	$a0	16($s0)
+	addiu	$a1	$s0	16
+	jal	_GenGC_Assign
+	move	$a0	$zero
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	addiu	$sp	$sp	-4	
+	la	$a0	int_const0
+	jal	Any.clone
+	sw	$a0	4($sp)
+	la	$a0	ArrayAny_protObj
+	jal	Any.clone
+	move	$s0	$a0
+	lw	$t1	8($s0)
+	lw	$t1	12($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	sw	$a0	12($s0)
+	addiu	$a1	$s0	12
+	jal	_GenGC_Assign
+	move	$a0	$zero
+	move	$a0	$s0
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	jr	$ra
+List.length:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	12($s0)
+
+	li	$t1	232
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	16($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	jr	$ra
+List.add:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	12($s0)
+
+	li	$t1	241
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	16($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	move	$s2	$a0
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	12($s0)
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	move	$a0	$s2
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	add	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	242
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	sw	$a0	12($s0)
+	addiu	$a1	$s0	12
+	jal	_GenGC_Assign
+	move	$a0	$zero
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	12($s0)
+	addiu	$sp	$sp	-12	
+	sw	$a0	4($sp)
+	move	$a0	$s2
+	sw	$a0	12($sp)
+	lw	$a0	24($sp)
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	243
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	28($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	8
+	jr	$ra
+List.replace:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	16($s0)
+	addiu	$sp	$sp	-16	
+	sw	$a0	4($sp)
+	lw	$a0	12($s0)
+	sw	$a0	16($sp)
+	lw	$a0	32($sp)
+	sw	$a0	12($sp)
+	lw	$a0	28($sp)
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	246
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	88($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	12
+	jr	$ra
+List.removeFirst:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	12($s0)
+
+	li	$t1	252
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	16($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	-4
+	sw	$a0	4($sp)
+	la	$a0	int_const0
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	252
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	8($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_else20
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const10
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	16($t1)
+	jalr	$t1
+	j	_endif20
+_else20:
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	12($s0)
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	int_const0
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	253
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	24($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	move	$s4	$a0
+	addiu	$sp	$sp	-4	
+	la	$a0	int_const0
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	88($t1)
+	jalr	$t1
+	move	$a0	$s4
+_endif20:
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	jr	$ra
+List.removeAt:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	16($s0)
+	addiu	$sp	$sp	-12	
+	sw	$a0	4($sp)
+	lw	$a0	12($s0)
+	sw	$a0	12($sp)
+	lw	$a0	24($sp)
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	257
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	80($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	sw	$a0	12($s0)
+	addiu	$a1	$s0	12
+	jal	_GenGC_Assign
+	move	$a0	$zero
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	8
+	jr	$ra
+List.removeAll:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	16($s0)
+	addiu	$sp	$sp	-12	
+	sw	$a0	4($sp)
+	lw	$a0	12($s0)
+	sw	$a0	12($sp)
+	lw	$a0	24($sp)
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	259
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	76($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	sw	$a0	12($s0)
+	addiu	$a1	$s0	12
+	jal	_GenGC_Assign
+	move	$a0	$zero
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	8
+	jr	$ra
+List.lastIndexOf:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	16($s0)
+	addiu	$sp	$sp	-12	
+	sw	$a0	4($sp)
+	lw	$a0	12($s0)
+	sw	$a0	12($sp)
+	lw	$a0	24($sp)
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	261
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	96($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	8
+	jr	$ra
+List.indexOf:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	16($s0)
+	addiu	$sp	$sp	-12	
+	sw	$a0	4($sp)
+	lw	$a0	12($s0)
+	sw	$a0	12($sp)
+	lw	$a0	24($sp)
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	263
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	100($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	8
+	jr	$ra
+List.toString:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	12($s0)
+
+	li	$t1	268
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	16($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	move	$s3	$a0
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s3
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	int_const0
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	269
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	8($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_else21
+	la	$a0	string_const5
+	jal	Any.clone
+	j	_endif21
+_else21:
+	la	$a0	int_const0
+	jal	Any.clone
+	move	$s2	$a0
+	la	$a0	string_const6
+	jal	Any.clone
+	move	$s4	$a0
+_while17:
+	move	$a0	$s2
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	move	$a0	$s3
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	sub	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+	lw	$a1	4($sp)		
+	sw	$ra	4($sp)		
+	jal	lt_helper
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_endwhile17
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s4
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+_match31:
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	12($s0)
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	move	$a0	$s2
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	274
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	24($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	beq	$a0	$zero	_match31_caseNull
+	addiu	$sp	$sp	-4
+	sw	$a0	4($sp)
+	lw	$t0	0($a0)
+	j	_match31_caseAny
+_match31_abort:
+	li	$t1	274
+	la	$a1	string_const2
+	j	_case_abort
+_match31_caseNull:
+	la	$a0	string_const13
+	jal	Any.clone
+	j	_endmatchnull31
+_match31_caseAny:
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	8($sp)
+
+	li	$t1	274
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	4($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	j	_endmatch31
+_endmatch31:
+	addiu	$sp	$sp	4
+_endmatchnull31:
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	274
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	-4
+	sw	$a0	4($sp)
+	la	$a0	string_const7
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	274
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	move	$s4	$a0
+	move	$a0	$zero
+	move	$a0	$s2
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	add	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+
+	move	$s2	$a0
+	move	$a0	$zero
+	j	_while17
+
+_endwhile17:
+	move	$a0	$zero
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s4
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+_match32:
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	12($s0)
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	move	$a0	$s2
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	277
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	24($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	beq	$a0	$zero	_match32_caseNull
+	addiu	$sp	$sp	-4
+	sw	$a0	4($sp)
+	lw	$t0	0($a0)
+	j	_match32_caseAny
+_match32_abort:
+	li	$t1	277
+	la	$a1	string_const2
+	j	_case_abort
+_match32_caseNull:
+	la	$a0	string_const13
+	jal	Any.clone
+	j	_endmatchnull32
+_match32_caseAny:
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	8($sp)
+
+	li	$t1	277
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	4($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	j	_endmatch32
+_endmatch32:
+	addiu	$sp	$sp	4
+_endmatchnull32:
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	277
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	-4
+	sw	$a0	4($sp)
+	la	$a0	string_const8
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	277
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+_endif21:
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	jr	$ra
+Main.Main:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s0
+
+	li	$t1	1
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	12($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	la	$a0	string_const17
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	la	$a0	List_protObj
+	jal	Any.clone
+	move	$s0	$a0
+	lw	$t1	8($s0)
+	lw	$t1	44($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	move	$s1	$a0
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	string_const18
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	7
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	64($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	string_const19
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	8
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	64($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	string_const20
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	9
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	64($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	string_const21
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	10
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	64($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	int_const3
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	11
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	64($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	boolean_lit1
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	12
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	64($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	boolean_lit0
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	13
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	64($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	int_const3
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	14
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	64($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	move	$a0	$zero
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	15
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	64($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	la	$a0	string_const22
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-8
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+
+	li	$t1	17
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	4($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const23
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-8
+	sw	$s0	4($sp)		
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+
+	li	$t1	19
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	48($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	19
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	4($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const24
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	int_const3
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	21
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	92($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+
+	li	$t1	22
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	4($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const25
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-12	
+	sw	$a0	4($sp)
+	la	$a0	boolean_lit1
+	jal	Any.clone
+	sw	$a0	12($sp)
+	la	$a0	boolean_lit0
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	24
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	68($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+
+	li	$t1	25
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	4($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const26
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	int_const4
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	27
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	88($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+
+	li	$t1	28
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	4($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const27
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	int_const0
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	30
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	88($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+
+	li	$t1	31
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	4($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const28
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-8
+	sw	$s0	4($sp)		
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	move	$a0	$zero
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	33
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	100($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	33
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	4($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const29
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-8
+	sw	$s0	4($sp)		
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	boolean_lit0
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	35
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	96($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	35
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	4($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const30
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+
+	li	$t1	37
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	80($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+
+	li	$t1	38
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	4($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const23
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-8
+	sw	$s0	4($sp)		
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+
+	li	$t1	40
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	48($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	40
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	4($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const31
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const32
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	la	$a0	IntList_protObj
+	jal	Any.clone
+	move	$s0	$a0
+	lw	$t1	8($s0)
+	lw	$t1	12($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	move	$s1	$a0
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	int_const4
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	48
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	36($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	int_const21
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	49
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	36($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	int_const22
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	50
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	36($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	int_const11
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	51
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	36($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	int_const3
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	52
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	36($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	int_const7
+	jal	Any.clone
+	lw	$t0	12($a0)
+	sub	$t0	$zero	$t0
+	sw	$t0	12($a0)
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	53
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	36($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	int_const23
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	54
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	36($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	la	$a0	string_const22
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-8
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+
+	li	$t1	56
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	4($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const23
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-8
+	sw	$s0	4($sp)		
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+
+	li	$t1	58
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	16($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	58
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	4($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const33
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	int_const4
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	60
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	60($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+
+	li	$t1	61
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	4($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const34
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-12	
+	sw	$a0	4($sp)
+	la	$a0	int_const21
+	jal	Any.clone
+	sw	$a0	12($sp)
+	la	$a0	int_const25
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	63
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	40($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+
+	li	$t1	64
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	4($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const35
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+
+	li	$t1	66
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	84($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+
+	li	$t1	67
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	4($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const36
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+
+	li	$t1	69
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	88($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+
+	li	$t1	70
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	4($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const26
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	int_const4
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	72
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	56($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+
+	li	$t1	73
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	4($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const27
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	int_const0
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	75
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	56($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+
+	li	$t1	76
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	4($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const37
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-8
+	sw	$s0	4($sp)		
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	int_const7
+	jal	Any.clone
+	lw	$t0	12($a0)
+	sub	$t0	$zero	$t0
+	sw	$t0	12($a0)
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	78
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	68($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	78
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	4($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const38
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-8
+	sw	$s0	4($sp)		
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	int_const30
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	80
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	64($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	80
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	4($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const30
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+
+	li	$t1	82
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	52($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+
+	li	$t1	83
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	4($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const23
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-8
+	sw	$s0	4($sp)		
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+
+	li	$t1	85
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	16($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	85
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	4($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const39
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const40
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	la	$a0	LinkedList_protObj
+	jal	Any.clone
+	move	$s0	$a0
+	lw	$t1	8($s0)
+	lw	$t1	44($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	move	$s1	$a0
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	string_const18
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	94
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	48($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	string_const19
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	95
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	48($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	string_const20
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	96
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	48($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	string_const21
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	97
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	48($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	int_const3
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	98
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	48($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	boolean_lit1
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	99
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	48($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	boolean_lit0
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	100
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	48($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	int_const3
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	101
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	48($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	move	$a0	$zero
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	102
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	48($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	la	$a0	string_const22
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-8
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+
+	li	$t1	104
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	4($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const23
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-8
+	sw	$s0	4($sp)		
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+
+	li	$t1	106
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	88($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	106
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	4($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const24
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	int_const3
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	108
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	72($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+
+	li	$t1	109
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	4($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const25
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-12	
+	sw	$a0	4($sp)
+	la	$a0	boolean_lit1
+	jal	Any.clone
+	sw	$a0	12($sp)
+	la	$a0	boolean_lit0
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	111
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	64($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+
+	li	$t1	112
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	4($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const26
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	int_const4
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	114
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	80($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+
+	li	$t1	115
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	4($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const27
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	int_const0
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	117
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	80($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+
+	li	$t1	118
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	4($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const28
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-8
+	sw	$s0	4($sp)		
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	move	$a0	$zero
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	120
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	92($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	120
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	4($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const29
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-8
+	sw	$s0	4($sp)		
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	boolean_lit0
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	122
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	96($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	122
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	4($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const30
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+
+	li	$t1	124
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	60($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+
+	li	$t1	125
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	4($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const23
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-8
+	sw	$s0	4($sp)		
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+
+	li	$t1	127
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	88($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	127
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	4($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const41
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const42
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	la	$a0	Stack_protObj
+	jal	Any.clone
+	move	$s0	$a0
+	lw	$t1	8($s0)
+	lw	$t1	12($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	move	$s1	$a0
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	string_const18
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	134
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	16($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	string_const19
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	135
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	16($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	string_const20
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	136
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	16($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	int_const17
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	137
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	16($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	la	$a0	Boolean_protObj
+	jal	Any.clone
+	move	$s0	$a0
+	lw	$t1	8($s0)
+	lw	$t1	12($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	138
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	16($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	la	$a0	string_const43
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-8
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+
+	li	$t1	140
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	4($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const44
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-8
+	sw	$s0	4($sp)		
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+
+	li	$t1	142
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	142
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	4($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const45
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-8
+	sw	$s0	4($sp)		
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+
+	li	$t1	144
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	24($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	144
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	4($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const46
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const47
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	la	$a0	Math_protObj
+	jal	Any.clone
+	move	$s0	$a0
+	lw	$t1	8($s0)
+	lw	$t1	12($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	move	$s1	$a0
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const48
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-8
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	int_const22
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	152
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	32($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	28($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const49
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-8
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-12	
+	sw	$a0	4($sp)
+	la	$a0	int_const22
+	jal	Any.clone
+	sw	$a0	12($sp)
+	la	$a0	int_const1
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	153
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	36($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	28($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const50
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-8
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-12	
+	sw	$a0	4($sp)
+	la	$a0	int_const13
+	jal	Any.clone
+	sw	$a0	12($sp)
+	la	$a0	int_const4
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	154
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	48($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	28($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const51
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-8
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	int_const37
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	155
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	28($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	28($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const52
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-8
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$t0	12($a0)
+	sub	$t0	$zero	$t0
+	sw	$t0	12($a0)
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	156
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	16($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	28($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const53
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-8
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-12	
+	sw	$a0	4($sp)
+	la	$a0	int_const16
+	jal	Any.clone
+	sw	$a0	12($sp)
+	la	$a0	int_const38
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	157
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	40($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	28($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const54
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-8
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+	addiu	$sp	$sp	-12	
+	sw	$a0	4($sp)
+	la	$a0	int_const17
+	jal	Any.clone
+	sw	$a0	12($sp)
+	la	$a0	int_const39
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	158
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	44($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	28($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const55
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const22
+	jal	Any.clone
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	add	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const17
+	jal	Any.clone
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const37
+	jal	Any.clone
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	sub	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const1
+	jal	Any.clone
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const4
+	jal	Any.clone
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	li	$t1	160
+	la	$a1	string_const16
+	beq	$a0	$zero	_divide_abort
+	div	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	sub	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	mul	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+	move	$s1	$a0
+	addiu	$sp	$sp	-8
+	sw	$s0	4($sp)		
+	move	$a0	$s1
+
+	li	$t1	161
+	la	$a1	string_const16
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	4($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-4	
+	la	$a0	string_const56
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	move	$a0	$s0
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	jr	$ra
+Math.Math:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s0
+
+	li	$t1	659
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	0($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	move	$a0	$s0
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	jr	$ra
+Math.abs:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	lw	$a0	8($sp)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const0
+	jal	Any.clone
+	lw	$a1	4($sp)		
+	sw	$ra	4($sp)		
+	jal	lt_helper
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_else22
+	lw	$a0	8($sp)
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$t0	12($a0)
+	sub	$t0	$zero	$t0
+	sw	$t0	12($a0)
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	mul	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+	j	_endif22
+_else22:
+	lw	$a0	8($sp)
+_endif22:
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	8
+	jr	$ra
+Math.fact:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	lw	$a0	8($sp)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$a1	4($sp)		
+	sw	$ra	4($sp)		
+	jal	lteq_helper
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_else23
+	la	$a0	int_const3
+	jal	Any.clone
+	j	_endif23
+_else23:
+	lw	$a0	8($sp)
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	addiu	$sp	$sp	-4	
+	lw	$a0	16($sp)
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	sub	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	28($t1)
+	jalr	$t1
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	mul	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+_endif23:
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	8
+	jr	$ra
+Math.pow:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	lw	$a0	8($sp)
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	lw	$a0	12($sp)
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	mul	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	8
+	jr	$ra
+Math.powTo:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	12($sp)
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	int_const3
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	671
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	8($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_else24
+	lw	$a0	12($sp)
+	j	_endif24
+_else24:
+	lw	$a0	12($sp)
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	addiu	$sp	$sp	-8	
+	lw	$a0	24($sp)
+	sw	$a0	8($sp)
+	lw	$a0	20($sp)
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	sub	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	36($t1)
+	jalr	$t1
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	mul	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+_endif24:
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	12
+	jr	$ra
+Math.max:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	lw	$a0	12($sp)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	lw	$a0	12($sp)
+	lw	$a1	4($sp)		
+	sw	$ra	4($sp)		
+	jal	lt_helper
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_else25
+	lw	$a0	8($sp)
+	j	_endif25
+_else25:
+	lw	$a0	12($sp)
+_endif25:
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	12
+	jr	$ra
+Math.min:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	lw	$a0	12($sp)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	lw	$a0	12($sp)
+	lw	$a1	4($sp)		
+	sw	$ra	4($sp)		
+	jal	lt_helper
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_else26
+	lw	$a0	12($sp)
+	j	_endif26
+_else26:
+	lw	$a0	8($sp)
+_endif26:
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	12
+	jr	$ra
+Math.mod:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	lw	$a0	12($sp)
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	lw	$a0	12($sp)
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	lw	$a0	20($sp)
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	lw	$a0	20($sp)
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	li	$t1	677
+	la	$a1	string_const2
+	beq	$a0	$zero	_divide_abort
+	div	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	mul	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	sub	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	12
+	jr	$ra
+Stack.Stack:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s0
+
+	li	$t1	620
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	0($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	sw	$s0	4($sp)		
+	addiu	$sp	$sp	-4	
+	la	$a0	int_const0
+	jal	Any.clone
+	sw	$a0	4($sp)
+	la	$a0	ArrayAny_protObj
+	jal	Any.clone
+	move	$s0	$a0
+	lw	$t1	8($s0)
+	lw	$t1	12($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	sw	$a0	12($s0)
+	addiu	$a1	$s0	12
+	jal	_GenGC_Assign
+	move	$a0	$zero
+	move	$a0	$s0
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	jr	$ra
+Stack.push:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	12($s0)
+
+	li	$t1	624
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	16($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	move	$s2	$a0
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	12($s0)
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	move	$a0	$s2
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	add	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	625
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	sw	$a0	12($s0)
+	addiu	$a1	$s0	12
+	jal	_GenGC_Assign
+	move	$a0	$zero
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	12($s0)
+	addiu	$sp	$sp	-12	
+	sw	$a0	4($sp)
+	move	$a0	$s2
+	sw	$a0	12($sp)
+	lw	$a0	24($sp)
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	626
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	28($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	8
+	jr	$ra
+Stack.pop:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	12($s0)
+
+	li	$t1	630
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	16($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	sub	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+	move	$s3	$a0
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	12($s0)
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	move	$a0	$s3
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	631
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	24($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	move	$s2	$a0
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	12($s0)
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	move	$a0	$s3
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	632
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	sw	$a0	12($s0)
+	addiu	$a1	$s0	12
+	jal	_GenGC_Assign
+	move	$a0	$zero
+	move	$a0	$s2
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	jr	$ra
+Stack.top:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	12($s0)
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	12($s0)
+
+	li	$t1	636
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	16($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	sub	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	636
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	24($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	jr	$ra
+Stack.toString:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	la	$a0	string_const6
+	jal	Any.clone
+	move	$s5	$a0
+	la	$a0	int_const0
+	jal	Any.clone
+	move	$s2	$a0
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	12($s0)
+
+	li	$t1	645
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	16($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	move	$s3	$a0
+_while18:
+	move	$a0	$s2
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	move	$a0	$s3
+	lw	$a1	4($sp)		
+	sw	$ra	4($sp)		
+	jal	lt_helper
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_endwhile18
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	12($s0)
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	move	$a0	$s2
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	647
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	24($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	move	$s4	$a0
+_match33:
+	move	$a0	$s4
+	beq	$a0	$zero	_match33_caseNull
+	addiu	$sp	$sp	-4
+	sw	$a0	4($sp)
+	lw	$t0	0($a0)
+	j	_match33_caseAny
+_match33_abort:
+	li	$t1	648
+	la	$a1	string_const2
+	j	_case_abort
+_match33_caseNull:
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s5
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	la	$a0	string_const13
+	jal	Any.clone
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	649
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	move	$s5	$a0
+	move	$a0	$zero
+	j	_endmatchnull33
+_match33_caseAny:
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s5
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s4
+
+	li	$t1	650
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	4($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	650
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	move	$s5	$a0
+	move	$a0	$zero
+	j	_endmatch33
+_endmatch33:
+	addiu	$sp	$sp	4
+_endmatchnull33:
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s5
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	move	$a0	$s2
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	move	$a0	$s3
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	sub	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+	lw	$a1	4($sp)		
+	sw	$ra	4($sp)		
+	jal	lt_helper
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_else27
+	la	$a0	string_const7
+	jal	Any.clone
+	j	_endif27
+_else27:
+	la	$a0	string_const8
+	jal	Any.clone
+_endif27:
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	652
+	la	$a1	string_const2
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	move	$s5	$a0
+	move	$a0	$zero
+	move	$a0	$s2
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	add	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+
+	move	$s2	$a0
+	move	$a0	$zero
+	j	_while18
+
+_endwhile18:
+	move	$a0	$zero
+	move	$a0	$s5
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	jr	$ra
+ArrayAny.length:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	lw	$a0	12($s0)
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	jr	$ra
+Boolean.toString:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	move	$a0	$s0
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_else28
+	la	$a0	string_const63
+	jal	Any.clone
+	j	_endif28
+_else28:
+	la	$a0	string_const64
+	jal	Any.clone
+_endif28:
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	jr	$ra
+IO.IO:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s0
+
+	li	$t1	11
+	la	$a1	string_const60
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	0($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	move	$a0	$s0
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	jr	$ra
+IO.is_null:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+_match34:
+	lw	$a0	8($sp)
+	beq	$a0	$zero	_match34_caseNull
+	addiu	$sp	$sp	-4
+	sw	$a0	4($sp)
+	lw	$t0	0($a0)
+	j	_match34_caseAny
+_match34_abort:
+	li	$t1	20
+	la	$a1	string_const60
+	j	_case_abort
+_match34_caseNull:
+	la	$a0	boolean_lit1
+	jal	Any.clone
+	j	_endmatchnull34
+_match34_caseAny:
+	la	$a0	boolean_lit0
+	jal	Any.clone
+	j	_endmatch34
+_endmatch34:
+	addiu	$sp	$sp	4
+_endmatchnull34:
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	8
+	jr	$ra
+IO.out_any:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	addiu	$sp	$sp	-8
+	lw	$a0	16($sp)
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	24($t1)
+	jalr	$t1
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_else29
+	la	$a0	string_const13
+	jal	Any.clone
+	j	_endif29
+_else29:
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	16($sp)
+
+	li	$t1	28
+	la	$a1	string_const60
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	4($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+_endif29:
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	20($t1)
+	jalr	$t1
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	8
+	jr	$ra
+Statistics.Statistics:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s0
+
+	li	$t1	183
+	la	$a1	string_const60
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	12($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	move	$a0	$s0
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	jr	$ra
+String.toString:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	move	$a0	$s0
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	jr	$ra
+String.length:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	lw	$a0	12($s0)
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	jr	$ra
+String.indexOf:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	lw	$a0	12($sp)
+
+	li	$t1	113
+	la	$a1	string_const60
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	16($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	move	$s1	$a0
+	lw	$a0	12($s0)
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	move	$a0	$s1
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	sub	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+	move	$s2	$a0
+	la	$a0	int_const0
+	jal	Any.clone
+	move	$s3	$a0
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$t0	12($a0)
+	sub	$t0	$zero	$t0
+	sw	$t0	12($a0)
+	move	$s4	$a0
+_while19:
+	move	$a0	$s3
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	move	$a0	$s2
+	lw	$a1	4($sp)		
+	sw	$ra	4($sp)		
+	jal	lteq_helper
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_endwhile19
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	addiu	$sp	$sp	-8	
+	move	$a0	$s3
+	sw	$a0	8($sp)
+	move	$a0	$s3
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	move	$a0	$s1
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	add	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+	sw	$a0	4($sp)
+	move	$a0	$s0
+	lw	$t1	8($s0)
+	lw	$t1	24($t1)
+	jalr	$t1
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	lw	$a0	20($sp)
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	118
+	la	$a1	string_const60
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	8($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	lw	$a0	12($a0)
+	beq	$a0	$zero	_else30
+	move	$a0	$s3
+
+	move	$s4	$a0
+	move	$a0	$zero
+	move	$a0	$s2
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	add	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+
+	move	$s3	$a0
+	move	$a0	$zero
+	j	_endif30
+_else30:
+	move	$a0	$s3
+	lw	$a0	12($a0)
+	addiu	$sp	$sp	-4	
+	sw	$a0	4($sp)		
+	la	$a0	int_const3
+	jal	Any.clone
+	lw	$a0	12($a0)
+	lw	$t0	4($sp)		
+	addiu	$sp	$sp	4
+	add	$t0	$t0	$a0
+
+	la	$a0	Int_protObj
+	sw	$t0	12($a0)
+	jal	Any.clone
+
+	move	$s3	$a0
+	move	$a0	$zero
+_endif30:
+	j	_while19
+
+_endwhile19:
+	move	$a0	$zero
+	move	$a0	$s4
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	8
+	jr	$ra
+Symbol.toString:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	la	$a0	string_const70
+	jal	Any.clone
+	addiu	$sp	$sp	-8	
+	sw	$a0	4($sp)
+	lw	$a0	16($s0)
+	sw	$a0	8($sp)
+	lw	$a0	4($sp)		
+	addiu	$sp	$sp	4
+
+	li	$t1	143
+	la	$a1	string_const60
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	20($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	jr	$ra
+Symbol.hashCode:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	lw	$a0	20($s0)
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	jr	$ra
+Unit.Unit:
+	addiu	$sp	$sp	-4	
+	sw	$ra	4($sp)		
+
+	addiu	$sp	$sp	-4	
+	sw	$s0	4($sp)		
+	move	$a0	$s0
+
+	li	$t1	44
+	la	$a1	string_const60
+	beq	$a0	$zero	_dispatch_abort
+	move	$s0	$a0
+	lw	$t1	8($a0)
+	lw	$t1	0($t1)
+	jalr	$t1
+	lw	$s0	4($sp)		
+	addiu	$sp	$sp	4
+	move	$a0	$s0
+
+	lw	$ra	4($sp)		
+	addiu	$sp	$sp	4
+	jr	$ra

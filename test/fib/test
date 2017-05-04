@@ -1,0 +1,4 @@
+#!/bin/bash
+
+./testasm.sh
+./testout.sh

@@ -1,0 +1,339 @@
+class Main() extends IO(){
+	{
+		
+	var school : School = new School("NHL");
+
+	var cInf : Course = new Course("Informatics",4,30);
+	school.addCourse(cInf);
+
+	var cEng : Course = new Course("English",4, 30);
+	school.addCourse(cEng);
+
+
+	var albert : Teacher = new Teacher(100000,"Albert",55);
+	cInf.addTeacher(albert);
+	school.addTeacher(albert);
+
+	
+	var len : Student = new Student("Len",24);
+	var wessel : Student = new Student("Wessel",24);
+	var johnDoe : Student = new Student("John",34);
+
+	school.addStudent(johnDoe,cEng);
+	school.addStudent(len,cInf);
+	school.addStudent(wessel,cInf);
+	
+	school.printInfo();
+
+	out("\n\n");
+
+	school.delStudent(johnDoe);
+	
+        var johnDoe2: Teacher = new Teacher(1500,johnDoe.toString(),30);
+	cEng.addTeacher(johnDoe2);
+	school.addTeacher(johnDoe2);
+
+
+        var jan: Teacher = new Teacher(100000,"Jan",40);
+        cInf.addTeacher(jan);
+        school.addTeacher(jan);
+	school.printInfo()
+	
+	};
+
+}
+
+class School(var title : String) extends IO() {
+	
+	var ids	: ArrayAny = new ArrayAny(0);
+
+	var students : ArrayAny = new ArrayAny(0);
+
+	var teachers : ArrayAny = new ArrayAny(0);
+
+	var courses : ArrayAny = new ArrayAny(0);
+	
+	override def toString() : String = title;
+
+	def addCourse(course : Course) : Unit = {
+		var count : Int = courses.length();
+			courses = courses.resize(count + 1);
+			courses.set(count,course); ()
+	};
+
+
+	def addStudent(student : Student, course : Course) : Boolean = {
+		if(course.enroll(student)){
+			var count : Int = students.length();
+			students = students.resize(count + 1);
+			students.set(count,student); student.setID(count); true
+		}else false
+	};
+
+	def delStudent(student : Student) : Unit = {
+		var i : Int = 0;
+		while(i < students.length()){
+			students.get(i) match {
+				case s:Student => 
+					if(s == student){
+					 s.getCourse() match { case null => ()
+							       case c:Course => c.disenroll(s)};
+					 students.set(i,());
+					 s.setID(-1)						 	
+					}else ()
+				case u:Unit => ()
+			};
+		i = i + 1
+		}		
+	};
+	
+
+	def addTeacher(teacher : Teacher) : Unit = {
+			var count : Int = teachers.length();
+			teachers = teachers.resize(count + 1);
+			teachers.set(count,teacher);()		
+	};
+
+	def delTeacher(teacher : Teacher) : Unit = {
+		var i : Int = 0;
+		var tCourses : ArrayAny  = teacher.getCourses();
+		var count : Int = courses.length();
+		while(i < count){
+			tCourses.get(i) match { case c:Course	=> c.delTeacher(teacher)
+						case u:Unit	=> () };
+			i = i + 1
+		};
+		tCourses = new ArrayAny(0);
+		
+		i = 0;
+		count = teachers.length();
+		while(i < count){
+			teachers.get(i) match { case t:Teacher	=> teachers.set(i,())
+						case u:Unit	=> ()};
+			i = i + 1
+		}
+	};
+
+	def getStudent(id : Int) : Student = null;
+	def getTeacher(id : Int) : Teacher = null;
+
+	def getStudents() : ArrayAny = students;
+	def getTeachers() : ArrayAny = teachers;
+	def getCourses() : ArrayAny = courses;
+
+	def getStudentCount() : Int = students.length();
+	def getTeacherCount() : Int = teachers.length();
+	def getCourseCount() : Int = courses.length();
+
+	def printInfo() : Unit = {
+		out("School: ");
+                out(title); 
+		out("\nStudents:\n");
+		print(students);
+		out("Teachers:\n");
+		print(teachers);
+		out("Courses:\n");
+		print(courses)
+	};
+
+	def print(list : ArrayAny) : Unit = {
+		var i : Int = 0;
+		while( i < list.length()){
+			list.get(i) match {
+
+				case c:Course	=>
+					out("\tCourse name:\t"); 
+                                        out(c.toString()); 
+                                        out("\n\tTeachers:\t");
+					var t : ArrayAny = c.getTeachers();
+					var j : Int = 0; 
+                                        var count : Int = t.length();
+					while(j < count){
+						t.get(j) match { case teacher:Teacher => if(j == 0) out("\t") else out(",\t"); 
+                                                out(teacher.toString())};
+						j = j + 1
+					};
+					t = c.getStudents();
+					j = 0; count = t.length();
+					out("\n\tStudents:\t");
+					while(j < count){
+						t.get(j) match {case s:Student => if(j==0) out("\t") else out(",\t"); out(s.toString())
+                                                                case o:Any => ()
+                                                               };
+                                                      
+						j = j + 1
+					}; out("\n\n")
+
+	 			case t:Teacher	=> 
+					out("\tTeacher ID:\t");out(t.getID().toString()); 
+					out("\n\tName:\t"); out(t.toString()); out("\n\tAge:\t");
+					out(t.getAge().toString()); out("\n\tSalary:\t");
+					out(t.getSalary().toString()); out("\n\tCourses:");
+					var tCourses : ArrayAny = t.getCourses();
+					var c : Int = 0; var cCount : Int = tCourses.length();
+					while(c < cCount){
+						if(c == 0) out("\t") else out(",\t"); out(tCourses.get(c).toString());
+						c = c + 1
+					};
+					out("\n\n")
+
+				 case s:Student	=> 
+					out("\tStudent ID:\t");out(s.getID().toString()); 
+					out("\n\tName:\t"); out(s.toString()); out("\n\tAge:\t");
+					out(s.getAge().toString());
+					out("\n\n")
+				 case null => ()
+				 case a:Any => ()
+				};
+		i = i + 1 
+		}		
+	};
+}
+
+
+class Person(var name : String,  var age : Int) {
+	
+	var hobbies : ArrayAny = new ArrayAny(0);
+
+	def getAge() : Int = age;
+
+	override def toString() : String = name;
+}
+
+class Course(var title : String, var duration : Int, var limit : Int) extends IO(){
+	
+	var students : ArrayAny = new ArrayAny(0);
+	var teachers : ArrayAny = new ArrayAny(0);
+
+	override def toString() : String = title;
+	
+	def getTeachers() : ArrayAny = teachers;
+	
+	def getStudents() : ArrayAny = students;
+
+	def getDuration() : Int = duration;
+
+	def isFull() : Boolean = students.length() == limit;
+
+	def hasStudent(student : Student) : Boolean = this == student.getCourse();
+
+	def addTeacher(teacher : Teacher) : Unit = {
+		var c : Int = teachers.length();
+		teachers = teachers.resize(c + 1);
+		teachers.set(c,teacher);
+		teacher.addCourse(this)
+	};
+
+	def delTeacher(teacher : Teacher) : Unit = {
+		
+		var i : Int = 0;
+		var count : Int = teachers.length();
+			while(i < count){
+				teachers.get(i) match {
+				case t:Teacher => 
+					if(t == teacher){
+					 teachers.set(i,())					 	
+					}else ()
+				case u:Unit => ()};
+				i = i + 1
+			}	
+	};
+
+	def enroll(student : Student) : Boolean = {
+	
+		var name : String = student.toString();
+		student.getCourse() match {
+		
+		case null =>
+			if( !isFull()){
+				student.setCourse(this);
+				var count : Int = students.length();
+				students = students.resize(count + 1);
+				students.set(count,student);
+				/*out(name.concat(" successfully enrolled in ").concat(title).concat("\n"));*/ true
+			}else {/*out(name.concat(" can't enroll in").concat(title).concat(", ").concat(title).concat(" is full!\n"));*/ false}
+
+		case c:Course => 
+			/*out(name.concat(" can't enroll in ").concat(title).concat(", ").
+			concat(name).concat(" is already enrolled in ").
+			concat(student.getCourse().getTitle()).concat("\n"));*/ false
+		}
+	};	
+
+	def disenroll(student : Student) : Unit = {
+
+		var name : String = student.toString();
+		var count : Int = students.length();
+
+		if(this == student.getCourse()){
+			var i : Int = 0;
+			while(i < count){
+				students.get(i) match {
+				case s:Student => 
+					if(s == student){
+					 students.set(i,())					 	
+					}else ()
+				case u:Unit => ()};
+				i = i + 1
+			};
+			student.setCourse(null)
+		}else ()
+	};
+}
+
+
+class Teacher(var salary : Int, var n : String,  var a : Int) extends Person(n,a) {
+		
+	var courses : ArrayAny = new ArrayAny(0);
+
+	var id : Int = 0;	
+
+	def getSalary() : Int = salary;	
+
+	def setSalary(newSalary : Int) : Unit = salary = newSalary;
+
+	def getID() : Int =  id;
+
+	def setID(num : Int) : Unit = id = num;
+
+	def getCourses() : ArrayAny = courses;
+
+	def addCourse(course : Course) : Unit = { 
+		var count : Int = courses.length();
+		courses = courses.resize(count + 1); 
+		courses.set(count, course); ()
+	};
+}
+
+class Student(var n : String, var a : Int) extends Person(n,a) {
+
+	var course : Course = null;
+
+	var id : Int = -1;
+	
+	def setCourse(c : Course) : Unit = course = c ;
+
+	def getCourse() : Course = course;
+
+	def setID(num : Int) : Unit = id = num;
+
+	def getID() : Int = id;
+
+	def isEnrolled() : Boolean = course match { case null => false case o:Course => true };
+
+	def changeCourse(newCourse : Course) : Boolean = newCourse match {
+                                                                          case null => false 
+                                                                          case o:Course => { 
+                                                                             course match { 
+                                                                                case null => false
+                                                                                case o2:Course => 
+                                                                                  if(course == newCourse) 
+                                                                                   false 
+                                                                                  else { 
+                                                                                    course.disenroll(this); 
+                                                                                    newCourse.enroll(this)
+                                                                                  }
+                                                                             } 
+                                                                          }
+                                                                         };
+}
